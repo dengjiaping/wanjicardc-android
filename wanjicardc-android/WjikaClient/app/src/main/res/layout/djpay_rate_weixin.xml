@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingBottom="20dp"
+              android:paddingTop="20dp">
+
+	<com.facebook.drawee.view.SimpleDraweeView
+		android:id="@+id/djpay_rate_img"
+		android:layout_width="49dp"
+		android:layout_height="49dp"
+		android:layout_gravity="center_vertical"/>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingLeft="30dp"
+		android:paddingTop="24dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:paddingBottom="13dp"
+			android:text="费率"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:paddingBottom="13dp"
+			android:text="结算"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="额度"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="13dp"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="5dp"
+			android:text="T+0到账"/>
+
+		<TextView
+			android:id="@+id/djpay_rate_rate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="13dp"/>
+
+		<TextView
+			android:id="@+id/djpay_rate_charge"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="13dp"/>
+
+		<TextView
+			android:id="@+id/djpay_rate_limit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="39dp"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="5dp"/>
+
+		<TextView
+			android:id="@+id/djpay_rate_rate1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="13dp"/>
+
+		<TextView
+			android:id="@+id/djpay_rate_charge1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="13dp"/>
+
+		<TextView
+			android:id="@+id/djpay_rate_limit1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+</LinearLayout>

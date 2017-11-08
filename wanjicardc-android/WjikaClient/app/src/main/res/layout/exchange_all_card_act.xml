@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+	android:background="@color/main_back">
+
+	<include layout="@layout/base_both_titlebar"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:background="@color/exchange_allcard_info_bg"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="27dp"
+			android:src="@drawable/exchange_allcard"/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="25dp"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/exchange_allcard_credit"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/exchange_allcard_credit_textcolor"
+				android:textSize="15sp"/>
+
+			<TextView
+				android:id="@+id/exchange_allcard_userable"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="14dp"
+				android:textColor="@color/main_module_back"
+				android:textSize="17sp"/>
+		</LinearLayout>
+	</LinearLayout>
+
+	<RadioGroup
+		android:id="@+id/exchange_allcard_group"
+		android:layout_width="match_parent"
+		android:layout_height="44dp"
+		android:gravity="center"
+		android:background="@color/white"
+		android:orientation="horizontal">
+
+		<RadioButton
+			android:id="@+id/exchange_allcard_all"
+			style="@style/ExchangeAllRadiobutton"
+			android:checked="true"
+			android:text="@string/person_order_all"/>
+
+		<RadioButton
+			android:id="@+id/exchange_allcard_phone"
+			style="@style/ExchangeAllRadiobutton"
+			android:text="@string/exchange_phone"/>
+
+		<RadioButton
+			android:id="@+id/exchange_allcard_game"
+			style="@style/ExchangeAllRadiobutton"
+			android:text="@string/exchange_game"/>
+
+		<RadioButton
+			android:id="@+id/exchange_allcard_prepayment"
+			style="@style/ExchangeAllRadiobutton"
+			android:text="@string/exchange_prepay"
+			android:visibility="gone"/>
+	</RadioGroup>
+
+	<android.support.v4.view.ViewPager
+		android:id="@+id/exchange_allcard_viewpager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/white"
+		android:layout_marginTop="5dp"/>
+</LinearLayout>

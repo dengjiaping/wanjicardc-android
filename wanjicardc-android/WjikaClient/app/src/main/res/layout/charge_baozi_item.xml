@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/rb_person_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:background="@color/white"
+        android:button="@null"
+        android:checked="true"
+        android:clickable="false"
+        android:drawableRight="@drawable/radio_button_selector" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tv_baozi_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text=""
+            android:textColor="#e23d46"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_newuser_gift_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/tv_baozi_value"
+            android:layout_alignBottom="@id/tv_baozi_value"
+            android:text=""
+            android:textColor="#e23d46"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_gift_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_baozi_value"
+            android:layout_below="@id/tv_baozi_value"
+            android:text=""
+            android:textColor="#2f333b"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vRechargeLine"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/wjika_client_spilt_line" />
+</RelativeLayout>

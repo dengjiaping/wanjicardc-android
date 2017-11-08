@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#f4f9fa"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="142dp"
+		android:background="@color/white"
+		android:gravity="center">
+
+		<TextView
+			android:id="@+id/pay_result_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawablePadding="15dp"
+			android:drawableTop="@drawable/icon_pay_success"
+			android:text="@string/card_charge_sucess"
+			android:textColor="#2f333b"
+			android:textSize="16sp" />
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/wjika_client_spilt_line" />
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginTop="10dp"
+		android:background="@color/wjika_client_spilt_line" />
+
+	<LinearLayout
+		android:id="@+id/layout_buy_card"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/cell_white_bg"
+		android:orientation="vertical"
+		android:paddingLeft="13dp">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:background="@color/white"
+			android:paddingRight="13dp">
+
+			<TextView
+				android:id="@+id/tv_card_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:textColor="@color/wjika_client_middle_gray"
+				android:textSize="18sp" />
+
+			<TextView
+				android:id="@+id/tv_card_amount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:textColor="@color/wjika_client_middle_gray"
+				android:textSize="@dimen/font_size_b" />
+		</RelativeLayout>
+
+		<TextView
+			android:id="@+id/tv_face_value"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:background="@color/white"
+			android:gravity="left|center_vertical"
+			android:textColor="@color/actionsheet_gray"
+			android:layout_marginBottom="20dp"
+			android:textSize="@dimen/font_size_a" />
+
+		<View
+			android:id="@+id/vLinePrivilege"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/wjika_client_spilt_line" />
+
+		<RelativeLayout
+			android:id="@+id/rl_privilege"
+			android:layout_width="match_parent"
+			android:layout_height="51dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/tv_privilege"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/person_privilege"
+				android:textColor="@color/actionsheet_gray"
+				android:textSize="@dimen/font_size_a" />
+
+			<LinearLayout
+				android:id="@+id/ll_privilege"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginLeft="10dp"
+				android:layout_toRightOf="@id/tv_privilege"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:src="@drawable/ic_launcher" />
+			</LinearLayout>
+		</RelativeLayout>
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/wjika_client_spilt_line" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="30dp"
+		android:layout_marginLeft="49dp"
+		android:layout_marginRight="49dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/pay_result_left_btn"
+			android:layout_width="117dp"
+			android:layout_height="35dp"
+			android:background="@drawable/pay_result_btn_bg"
+			android:text="@string/card_charge_to_card"
+			android:layout_weight="1.0"
+			android:textColor="#9099a6" />
+
+		<Button
+			android:id="@+id/pay_result_right_btn"
+			android:layout_width="117dp"
+			android:layout_height="35dp"
+			android:background="@drawable/pay_result_btn_bg"
+			android:text="@string/card_charge_to_first"
+			android:layout_marginLeft="28dp"
+			android:layout_weight="1.0"
+			android:textColor="#9099a6" />
+	</LinearLayout>
+
+</LinearLayout>

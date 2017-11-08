@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+	android:background="@color/wjika_client_common_bg">
+
+	<include layout="@layout/load_data_status_view"/>
+
+	<com.common.widget.FootLoadingListView
+		android:id="@+id/person_card_list"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:divider="@color/wjika_client_common_bg"
+		android:dividerHeight="1px"/>
+</LinearLayout>

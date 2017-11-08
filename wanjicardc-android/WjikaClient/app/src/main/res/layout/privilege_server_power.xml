@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_privilege"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/wjika_client_comment_margintop"
+    android:background="@drawable/cell_white_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:touchscreenBlocksFocus="true">
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="#e6e7e8"/>
+
+    <TextView
+        android:text="商家特权"
+        android:id="@+id/txt_privilege_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_c"
+        android:textColor="@color/wjika_client_dark_grey"
+        android:layout_marginLeft="@dimen/wjika_client_comment_marginleft"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/store_privilege"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:id="@+id/privilege_icon_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="@dimen/wjika_client_comment_marginleft"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none"
+            android:orientation="horizontal"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_right_arrow"
+            android:layout_marginRight="@dimen/btn_card_login_margin"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,223 @@
+<resources>
+
+	<style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="android:windowBackground">@android:color/white</item>
+		<item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+	</style>
+
+	<style name="AppBaseThemeTransparent" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+	</style>
+
+	<style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+		<item name="spinBars">true</item>
+		<item name="color">@android:color/white</item>
+		<item name="thickness">1dp</item>
+	</style>
+
+	<style name="ToolBarThemeTitleText" parent="Base.TextAppearance.Widget.AppCompat.Toolbar.Title">
+		<item name="android:textSize">18sp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+	<!-- Application theme. -->
+	<style name="AppTheme" parent="AppBaseTheme">
+	</style>
+
+	<style name="NoTitleBar.Fullscreen" parent="AppTheme">
+		<item name="android:windowFullscreen">true</item>
+		<!--<item name="android:windowIsTranslucent">true</item>-->
+	</style>
+
+	<!--二维码-->
+	<style name="ResultButton">
+		<item name="android:layout_width">0dip</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+	</style>
+
+	<style name="CaptureTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="android:windowFullscreen">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+	</style>
+
+	<style name="PopupAnimation" parent="android:Animation">
+		<item name="android:windowEnterAnimation">@anim/push_up_out</item>
+	</style>
+
+	<style name="Text">
+		<item name="android:color">@color/wjika_client_gray</item>
+		<item name="android:textSize">@dimen/font_size_c</item>
+	</style>
+
+	<style name="Text.Title">
+		<item name="android:color">#000</item>
+		<item name="android:textColor">@color/wjika_client_middle_gray</item>
+		<item name="android:textSize">@dimen/font_size_a</item>
+	</style>
+
+	<style name="Text.Name" parent="Text.Title">
+		<item name="android:textSize">16sp</item>
+	</style>
+
+	<style name="PersonItemCommon">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">48dp</item>
+		<item name="android:background">@color/white</item>
+		<item name="android:paddingLeft">12dp</item>
+		<item name="android:paddingRight">12dp</item>
+		<item name="android:drawableRight">@drawable/person_jump_icon</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textColor">@color/wjika_client_dark_grey</item>
+	</style>
+
+	<style name="PersonItem" parent="PersonItemCommon">
+		<item name="android:drawablePadding">15dp</item>
+	</style>
+
+	<style name="Update_Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowAnimationStyle">@null</item>
+		<item name="android:backgroundDimEnabled">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowFullscreen">true</item>
+		<item name="android:windowCloseOnTouchOutside">false</item>
+	</style>
+
+	<style name="main_channel_img">
+		<item name="android:layout_marginTop">12dp</item>
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+
+	<style name="main_brand_tv">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">center</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textSize">10sp</item>
+		<item name="android:textColor">@color/main_brand_textcolor</item>
+	</style>
+	<!-- 自定义仿IOS的ActionSheet底部Dialog的样式 ，有模糊效果 -->
+	<style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+
+		<!-- 背景透明 -->
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<!-- 浮于Activity之上 -->
+		<item name="android:windowIsFloating">true</item>
+		<!-- 边框 -->
+		<item name="android:windowFrame">@null</item>
+		<!-- Dialog以外的区域模糊效果 -->
+		<item name="android:backgroundDimEnabled">true</item>
+		<!-- 无标题 -->
+		<item name="android:windowNoTitle">true</item>
+		<!-- 半透明 -->
+		<item name="android:windowIsTranslucent">true</item>
+		<!-- Dialog进入及退出动画 -->
+		<item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+	</style>
+	<!-- ActionSheet进出动画 -->
+	<style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+		<item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+		<item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+	</style>
+	<!--个人中心充满布局的分割线-->
+	<style name="person_split_match">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">1px</item>
+		<item name="android:background">@color/wjika_client_spilt_line</item>
+	</style>
+	<!--个人中心距离top10dp的分割线-->
+	<style name="person_split_margin_top" parent="person_split_match">
+		<item name="android:layout_marginTop">10dp</item>
+	</style>
+	<!--个人中心距离左右12dp的分割线-->
+	<style name="person_split_left_right" parent="person_split_match">
+		<item name="android:layout_marginLeft">12dp</item>
+		<item name="android:layout_marginRight">12dp</item>
+	</style>
+	<!--个人中心我的资产三种类型数量-->
+	<style name="person_property_type_num">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textColor">@color/wjika_client_dark_grey</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+	<!--个人中心我的资产三种类型名称-->
+	<style name="person_property_type_name">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textColor">@color/wjika_client_dark_grey</item>
+		<item name="android:textSize">12sp</item>
+		<item name="android:layout_marginTop">5dp</item>
+	</style>
+	<!--订单详情电子卡支付dialog样式-->
+	<style name="DialogTransparent" parent="Theme.AppCompat.Dialog">
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:windowAnimationStyle">@android:style/Animation</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+	</style>
+
+	<!--DJ中添加银行卡style-->
+	<style name="DjPayAddBankLayout">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">44dp</item>
+		<item name="android:orientation">horizontal</item>
+		<item name="android:paddingLeft">12dp</item>
+		<item name="android:paddingRight">12dp</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:background">@color/white</item>
+	</style>
+
+	<style name="DjPayAddBankTextView">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColor">@color/wjika_client_middle_gray</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:imeOptions">actionNext</item>
+	</style>
+
+	<style name="DjPayAddBankEditText">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">3</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColorHint">@color/wjika_client_gray</item>
+		<item name="android:background">@null</item>
+	</style>
+
+	<!--卡兑换所有卡界面列表选项style-->
+	<style name="ExchangeAllRadiobutton">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:layout_marginLeft">20dp</item>
+		<item name="android:layout_marginRight">20dp</item>
+		<item name="android:button">@null</item>
+		<item name="android:gravity">center</item>
+		<item name="android:background">@drawable/order_category_selector</item>
+		<item name="android:paddingTop">12dp</item>
+		<item name="android:paddingBottom">12dp</item>
+		<item name="android:textColor">@drawable/exchange_allcard_classify_textcolor</item>
+		<item name="android:textSize">15sp</item>
+	</style>
+</resources>

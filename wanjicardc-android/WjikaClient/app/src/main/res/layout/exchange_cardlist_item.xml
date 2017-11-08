@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:minHeight="109dp">
+
+	<android.support.v7.widget.CardView
+		android:id="@+id/exchange_carditem_cardview"
+		android:layout_width="109dp"
+		android:layout_height="62dp"
+		android:layout_centerVertical="true"
+		app:cardBackgroundColor="@color/wjika_client_card_blue"
+		app:cardCornerRadius="5dp">
+
+		<com.facebook.drawee.view.SimpleDraweeView
+			android:id="@+id/exchange_carditem_logo"
+			android:layout_width="64dp"
+			android:layout_height="40dp"
+			android:layout_gravity="center"
+			app:actualImageScaleType="fitCenter"
+			app:background="@drawable/default_image_bg"
+			app:fadeDuration="500"
+			app:failureImage="@drawable/default_image_bg"
+			app:placeholderImage="@drawable/default_image_bg"/>
+	</android.support.v7.widget.CardView>
+
+	<LinearLayout
+		android:id="@+id/exchange_carditem_layout"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="15dp"
+		android:layout_toRightOf="@id/exchange_carditem_cardview"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/exchange_carditem_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/wjika_client_dark_grey"
+			android:textSize="15sp"/>
+
+		<TextView
+			android:id="@+id/exchange_carditem_info"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="24dp"
+			android:text="@string/exchange_nouse_card"
+			android:textColor="@color/wjika_client_introduce_words"
+			android:textSize="14sp"/>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/exchange_carditem_exchange"
+		android:layout_width="92dp"
+		android:layout_height="30dp"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="59dp"
+		android:background="@drawable/ic_tran_button"
+		android:gravity="center"
+		android:text="@string/exchange_have_card"
+		android:textColor="@color/wjika_client_primary_visual_blue"
+		android:textSize="12sp"/>
+
+	<View style="@style/person_split_match"
+	      android:layout_alignParentBottom="true"/>
+</RelativeLayout>

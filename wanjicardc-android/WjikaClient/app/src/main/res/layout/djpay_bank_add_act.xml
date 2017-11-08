@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/person_main_auth"
+			android:layout_width="match_parent"
+			android:layout_height="32dp"
+			android:background="@color/wjika_client_transparent_blue"
+			android:drawableLeft="@drawable/location_prompt"
+			android:drawablePadding="10dp"
+			android:gravity="center_vertical"
+			android:paddingLeft="12dp"
+			android:paddingRight="12dp"
+			android:text="请绑定持卡本人的银行卡"
+			android:textColor="@color/wjika_client_primary_visual_blue"
+			android:textSize="12sp"/>
+
+		<LinearLayout
+			style="@style/DjPayAddBankLayout">
+
+			<TextView
+				style="@style/DjPayAddBankTextView"
+				android:text="持卡人"/>
+
+			<com.wjika.client.widget.ClearEditText
+				android:id="@+id/djpay_addbank_name"
+				style="@style/DjPayAddBankEditText"
+				android:inputType="text"
+				android:hint="请输入持卡人姓名"/>
+		</LinearLayout>
+
+		<View style="@style/person_split_left_right"/>
+
+		<View style="@style/person_split_left_right"/>
+
+		<LinearLayout
+			style="@style/DjPayAddBankLayout">
+
+			<TextView
+				style="@style/DjPayAddBankTextView"
+				android:text="卡号"/>
+
+			<com.wjika.client.widget.ClearEditText
+				android:id="@+id/djpay_addbank_banknum"
+				style="@style/DjPayAddBankEditText"
+				android:inputType="number"
+				android:hint="请输入所属银行卡号"/>
+		</LinearLayout>
+
+		<View style="@style/person_split_left_right"/>
+
+		<LinearLayout
+			style="@style/DjPayAddBankLayout">
+
+			<TextView
+				style="@style/DjPayAddBankTextView"
+				android:text="身份证号"/>
+
+			<com.wjika.client.widget.ClearEditText
+				android:id="@+id/djpay_addbank_idcard"
+				style="@style/DjPayAddBankEditText"
+				android:inputType="text"
+				android:hint="请输入持卡人身份证号"/>
+		</LinearLayout>
+
+		<View style="@style/person_split_left_right"/>
+
+		<LinearLayout
+			style="@style/DjPayAddBankLayout">
+
+			<TextView
+				style="@style/DjPayAddBankTextView"
+				android:text="手机号"/>
+
+			<com.wjika.client.widget.ClearEditText
+				android:id="@+id/djpay_addbank_phone"
+				style="@style/DjPayAddBankEditText"
+				android:inputType="phone"
+				android:imeOptions="actionGo"
+				android:hint="请输入持卡人手机号"/>
+		</LinearLayout>
+
+		<View style="@style/person_split_left_right"/>
+
+		<LinearLayout
+			style="@style/DjPayAddBankLayout"
+			android:visibility="gone">
+
+			<TextView
+				style="@style/DjPayAddBankTextView"
+				android:text="手机验证码"/>
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="3"
+				android:gravity="center"
+				android:orientation="horizontal"
+				android:padding="0dp">
+
+				<com.wjika.client.widget.ClearEditText
+					android:id="@+id/djpay_addbank_code"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:background="@null"
+					android:hint="请输入验证码"
+					android:inputType="number"
+					android:singleLine="true"
+					android:imeOptions="actionGo"
+					android:textColorHint="@color/wjika_client_gray"
+					android:textSize="14sp"/>
+
+				<View
+					android:layout_width="1px"
+					android:layout_height="36dp"
+					android:background="@color/wjika_client_spilt_line"/>
+
+				<TextView
+					android:id="@+id/djpay_addbank_getcode"
+					android:layout_width="72dp"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="12dp"
+					android:gravity="center"
+					android:text="获取验证码"
+					android:textColor="@color/wjika_client_gray"/>
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<View style="@style/person_split_match"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:paddingTop="15dp"
+			android:paddingBottom="30dp"
+			android:text="他人银行卡无法绑定，请使用本人名下银行卡"
+			android:textColor="@color/wjika_client_gray"
+			android:background="@color/main_back"
+			android:textSize="12sp"/>
+
+		<TextView
+			android:id="@+id/djpay_addbank_bind"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:layout_marginLeft="15dp"
+			android:layout_marginRight="15dp"
+			android:background="@drawable/ic_button"
+			android:enabled="false"
+			android:gravity="center"
+			android:text="绑定"
+			android:textColor="@color/white"/>
+	</LinearLayout>
+</ScrollView>
+

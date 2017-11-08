@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wjika_client_common_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_launcher"
+            android:drawablePadding="12dp"
+            android:gravity="center"
+            android:text="水费"
+            android:textColor="@color/wjika_client_dark_grey"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/store_location"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingRight="12dp"
+            android:background="@drawable/addfix_account_location_bg"
+            android:text="定位" />
+    </RelativeLayout>
+
+    <View style="@style/person_split_match" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="缴费单位"
+            android:textColor="@color/wjika_client_dark_grey"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:background="@color/wjika_client_spilt_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_right_arrow"
+            android:layout_gravity="center"
+            android:text="请选择您的缴费单位"
+            android:textColor="@color/wjika_client_introduce_words"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View style="@style/person_split_match" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="客户编号"
+            android:textColor="@color/wjika_client_dark_grey"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:background="@color/wjika_client_spilt_line" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="编号可查看纸质账单"
+            android:textColorHint="@color/wjika_client_introduce_words"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View style="@style/person_split_match" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:hint="添加账户名称方便查找，不超过6个字（选填）"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColor="@color/wjika_client_dark_grey"
+        android:textColorHint="@color/wjika_client_introduce_words"
+        android:textSize="13sp" />
+
+    <View style="@style/person_split_match" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="请于2点至23点期间缴费；"
+        android:textColor="@color/wjika_client_introduce_words"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="开头为95的编号，编号数为9位数字"
+        android:textColor="@color/wjika_client_introduce_words"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_button"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+</LinearLayout>

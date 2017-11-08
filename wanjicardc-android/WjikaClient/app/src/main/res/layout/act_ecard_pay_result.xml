@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/wjika_client_common_bg"
+              android:orientation="vertical">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:drawablePadding="15dp"
+		android:drawableTop="@drawable/icon_pay_success"
+		android:gravity="center"
+		android:paddingBottom="25dp"
+		android:paddingTop="15dp"
+		android:text="@string/pay_buy_card_result_title"
+		android:textColor="@color/wjika_client_dark_grey"
+		android:textSize="16sp"/>
+
+	<View style="@style/person_split_match"/>
+
+	<View
+		style="@style/person_split_match"
+		android:layout_marginTop="10dp"/>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:background="@color/white"
+		android:paddingBottom="20dp"
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp"
+		android:paddingTop="20dp">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/ecard_pay_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:singleLine="true"
+				android:textColor="@color/wjika_client_dark_grey"
+				android:textSize="15sp"/>
+
+			<ImageView
+				android:id="@+id/ecard_pay_baozi_img"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/ecard_wallet_ic"/>
+
+			<TextView
+				android:text="sjfksdjfldsj"
+				android:id="@+id/ecard_pay_price"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:drawablePadding="5dp"
+				android:textSize="18sp"/>
+		</LinearLayout>
+		<TextView
+			android:id="@+id/ecard_pay_value"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="9dp"
+			android:textColor="@color/wjika_client_introduce_words"
+			android:textSize="12sp"/>
+
+		<TextView
+			android:id="@+id/ecard_pay_num"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="9dp"
+			android:textColor="@color/wjika_client_introduce_words"
+			android:textSize="12sp"/>
+	</LinearLayout>
+
+	<View style="@style/person_split_match"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="12dp"
+		android:text="@string/ecard_pay_result_desc"
+		android:textColor="@color/wjika_client_introduce_words"
+		android:textSize="12sp"/>
+
+	<TextView
+		android:id="@+id/ecard_pay_goto_market"
+		android:layout_width="117dp"
+		android:layout_height="35dp"
+		android:layout_gravity="center"
+		android:layout_marginTop="30dp"
+		android:background="@drawable/pay_result_btn_bg"
+		android:gravity="center"
+		android:text="@string/pay_result_go"
+		android:textColor="@color/wjika_client_introduce_words"/>
+</LinearLayout>

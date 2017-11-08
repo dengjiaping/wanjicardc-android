@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<include layout="@layout/load_data_status_view"/>
+
+	<GridView
+		android:id="@+id/main_gv_brans_more"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="12dp"
+		android:layout_marginRight="12dp"
+		android:background="@color/main_module_back"
+		android:columnWidth="105.5dp"
+		android:horizontalSpacing="10dp"
+		android:numColumns="3"
+		android:paddingTop="15dp"
+		android:clipToPadding="false"
+		android:scrollbars="none"
+		android:stretchMode="columnWidth"/>
+</LinearLayout>

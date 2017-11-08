@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wjika_client_common_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/person_pay_setting_nopwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/person_pay_setting_nopwd"
+            android:textColor="@color/wjika_client_middle_gray" />
+
+        <TextView
+            android:id="@+id/person_pay_setting_nopwd_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_nopwd_setting_bg"
+            android:textIsSelectable="true" />
+    </LinearLayout>
+
+    <View style="@style/person_split_match" />
+
+    <View style="@style/person_split_margin_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/setting_alter_find_pay_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="1px"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/person_pay_setting_find"
+                android:textColor="@color/wjika_client_middle_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/person_jump_icon"
+                android:gravity="center_vertical"
+                android:text="@string/person_fix"
+                android:textColor="@color/wjika_client_gray" />
+        </LinearLayout>
+
+        <View style="@style/person_split_left_right" />
+
+        <LinearLayout
+            android:id="@+id/person_pay_setting_account_question"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/account_safe_security_question"
+                android:textColor="@color/wjika_client_middle_gray" />
+
+            <TextView
+                android:id="@+id/person_pay_setting_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/person_jump_icon"
+                android:gravity="center_vertical"
+                android:textColor="@color/wjika_client_price_red" />
+        </LinearLayout>
+
+        <View style="@style/person_split_left_right" />
+
+        <LinearLayout
+            android:id="@+id/person_pay_setting_binding_phone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="1px"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/account_safe_bind_phone"
+                android:textColor="@color/wjika_client_middle_gray" />
+
+            <TextView
+                android:id="@+id/person_pay_setting_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/person_jump_icon"
+                android:gravity="center_vertical"
+                android:textColor="@color/wjika_client_gray" />
+        </LinearLayout>
+
+        <View style="@style/person_split_match" />
+    </LinearLayout>
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_marginBottom="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="万集卡客服电话"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:text="400-872-2002"/>
+    </LinearLayout>-->
+</LinearLayout>

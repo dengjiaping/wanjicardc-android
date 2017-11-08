@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--二维码-->
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+	<color name="border_gray">#e0e0e0</color>
+    <color name="distance_spinner_bg">#E5E5E5</color>
+	<color name="distance_spinner_right_bg">#F3F3F3</color>
+    <color name="spinner_list_item_selector">#028be6</color>
+	<!--dialogplus-->
+	<color name="black_overlay">#60000000</color>
+
+	<color name="wjika_client_common_bg">#f4f9fa</color>
+    <color name="wjika_client_middle_gray">#333333</color>
+    <color name="wjika_client_gray">#999999</color>
+    <color name="wjika_client_title_bg">#31b0ef</color>
+    <color name="wjika_client_price_red">#e43b41</color>
+	<color name="wjika_client_litte_gray">#666</color>
+	<color name="wjika_client_input_hint_color">#dbdbdb</color>
+    <color name="card_details_bottom_bg">#f3f3f3</color>
+    <color name="buy_store_city_bg">#f8f8f8</color>
+    <color name="main_back">#f5f8fa</color>
+    <color name="main_module_back">#ffffff</color>
+    <color name="exect_electcard_num_bg">#f6f8fa</color>
+    <color name="main_titlebar_default">#26757575</color>
+    <!--v2.5.0 app配色方案,整套app用色-->
+    <color name="wjika_client_primary_visual_blue">#31b0ef</color>
+    <color name="wjika_client_red">#e23d46</color>
+    <color name="wjika_client_dark_grey">#2f333b</color>
+    <color name="wjika_client_introduce_words">#9099a6</color>
+    <color name="wjika_client_hint_words">#c7c7cc</color>
+    <color name="wjika_client_spilt_line">#e6e7e8</color>
+    <color name="wjika_client_bg_white">#f5f8fa</color>
+    <color name="wjika_client_spilt_tabline">#e7e7e8</color>
+    <color name="wjika_client_prompt_words">#373b44</color>
+	<color name="wjika_client_transparent_blue">#4431b0ef</color>
+
+    <!--卡片配色方案-->
+    <color name="wjika_client_card_red">#ff635b</color>
+    <color name="wjika_client_card_blue">#50c9fb</color>
+    <color name="wjika_client_card_yellow">#ffc353</color>
+    <color name="wjika_client_card_green">#5cd8b8</color>
+	<color name="wjika_client_brand_red1">#AF1A1A</color>
+	<color name="wjika_client_brand_red2">#D32210</color>
+	<color name="wjika_client_brand_red3">#FE0000</color>
+	<color name="wjika_client_brand_pink">#F32C87</color>
+	<color name="wjika_client_brand_green1">#BFE00D</color>
+	<color name="wjika_client_brand_green2">#81AD00</color>
+	<color name="wjika_client_brand_green3">#82B12F</color>
+	<color name="wjika_client_brand_purple">#80007D</color>
+	<color name="wjika_client_brand_blue">#1B78C8</color>
+	<color name="wjika_client_brand_yellow">#F7CC25</color>
+	<color name="wjika_client_brand_orange">#FF6600</color>
+	<color name="wjika_client_brand_black">#221E1F</color>
+    
+    <color name="store_list_category">#2e323b</color>
+
+	<color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="wjika_client_btn_gray">#84878d</color>
+    <color name="person_main_baozi_num">#D9A109</color>
+	<color name="ecard_text_color">#007AFF</color>
+	<color name="ecard_limit_text">#FF6554</color>
+	<color name="card_store_price">#F02B2B</color>
+
+	<color name="djpay_account_blue">#019cff</color>
+	<color name="edittext_hint_color">#cccccc</color>
+	
+	<color name="exchange_allcard_info_bg">#009cff</color>
+	<color name="exchange_allcard_credit_textcolor">#ccebff</color>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PasswordInputView">
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="borderColor" format="color"/>
+        <attr name="borderRadius" format="dimension"/>
+        <attr name="passwordLength" format="integer"/>
+        <attr name="passwordWidth" format="dimension"/>
+        <attr name="passwordColor" format="color"/>
+        <attr name="passwordRadius" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="type1">
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="border1" format="boolean" />
+        <attr name="borderColor1" format="color" />
+        <attr name="borderWidth1" format="dimension" />
+    </declare-styleable>
+
+
+</resources>

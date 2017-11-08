@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+	<View style="@style/person_split_match"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="41dp"
+		android:gravity="center"
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp">
+
+		<TextView
+			android:id="@+id/djpay_bill_ordernum"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="订单编号"
+			android:textColor="@color/wjika_client_introduce_words"
+			android:textSize="12sp"/>
+
+		<TextView
+			android:id="@+id/djpay_bill_orderstate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:text="支付成功"
+			android:textColor="@color/wjika_client_introduce_words"
+			android:textSize="12sp"/>
+	</RelativeLayout>
+
+	<View style="@style/person_split_left_right"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dp"
+		android:gravity="center"
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp">
+
+		<TextView
+			android:id="@+id/djpay_bill_orderget"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="收款：5000"
+			android:textColor="@color/wjika_client_middle_gray"
+			android:textSize="15sp"/>
+
+		<TextView
+			android:id="@+id/djpay_bill_orderchannel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:drawablePadding="10dp"
+			android:text="通道：微信扣款"
+			android:textColor="@color/wjika_client_middle_gray"
+			android:textSize="15sp"/>
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="15dp"
+		android:layout_marginTop="15dp"
+		android:gravity="center_vertical"
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp">
+
+		<TextView
+			android:id="@+id/djpay_bill_orderfee"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="手续费：2.00"
+			android:textColor="@color/wjika_client_middle_gray"
+			android:textSize="15sp"/>
+
+		<TextView
+			android:id="@+id/djpay_billitem_detailtime"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="15dp"
+			android:text="11:22:30"
+			android:textColor="@color/wjika_client_introduce_words"
+			android:textSize="12sp"/>
+	</LinearLayout>
+
+	<View style="@style/person_split_match"/>
+</LinearLayout>

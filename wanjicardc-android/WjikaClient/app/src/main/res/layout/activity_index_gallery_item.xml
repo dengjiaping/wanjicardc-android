@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="257dp"
+                android:layout_height="154dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@color/main_module_back">
+
+	<RelativeLayout
+		android:id="@+id/rl_main_brandforme_item_bg"
+		android:layout_width="257dp"
+		android:layout_height="154dp"
+		android:layout_gravity="center_vertical"
+		android:layout_marginBottom="5dp"
+		android:layout_marginTop="8dp"
+		android:background="@color/main_module_back">
+
+		<com.facebook.drawee.view.SimpleDraweeView
+			android:id="@+id/main_bottom_brand_item_logo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="18dp"
+			android:layout_marginTop="21dp"
+			android:background="@drawable/home_brand_item_logo"
+			android:padding="2dp"
+			fresco:actualImageScaleType="fitCenter"
+			fresco:placeholderImageScaleType="fitCenter"/>
+
+		<TextView
+			android:id="@+id/main_tv_brand_item_facevalue"
+			android:layout_width="64dp"
+			android:layout_height="19dp"
+			android:layout_below="@id/main_bottom_brand_item_logo"
+			android:layout_marginBottom="20dp"
+			android:layout_marginLeft="7dp"
+			android:layout_marginTop="25dp"
+			android:background="@drawable/home_brand_item_faceprice"
+			android:gravity="center"
+			android:textColor="@color/main_module_back"
+			android:textSize="11sp"/>
+
+		<LinearLayout
+			android:layout_width="257dp"
+			android:layout_height="154dp"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/main_tv_brand_item_storename"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="95dp"
+				android:layout_marginTop="27dp"
+				android:textColor="@color/main_module_back"
+				android:textSize="14sp"/>
+
+			<TextView
+				android:id="@+id/main_tv_brand_item_price"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="95dp"
+				android:layout_marginTop="13dp"
+				android:textColor="@color/main_module_back"
+				android:textSize="17sp"/>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="95dp"
+				android:layout_marginTop="23dp"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/main_tv_brand_item_txt1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/main_module_back"
+					android:textSize="11sp"/>
+
+				<TextView
+					android:id="@+id/main_tv_brand_item_privilegeNum"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/main_module_back"
+					android:textSize="11sp"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/main_module_back"
+					android:textSize="11sp"/>
+			</LinearLayout>
+		</LinearLayout>
+
+		<ImageView
+			android:id="@+id/index_itempic_rightcorner"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"/>
+	</RelativeLayout>
+</RelativeLayout>

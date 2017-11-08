@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f4f9fa"
+              android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="142dp"
+		android:background="@color/white"
+		android:gravity="center">
+
+		<TextView
+			android:id="@+id/pay_result_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawablePadding="15dp"
+			android:drawableTop="@drawable/icon_pay_success"
+			android:text="@string/card_charge_sucess"
+			android:textColor="#2f333b"
+			android:textSize="16sp"/>
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/wjika_client_spilt_line"/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginTop="10dp"
+		android:background="@color/wjika_client_spilt_line"/>
+
+	<LinearLayout
+		android:id="@+id/layout_buy_card"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/cell_white_bg"
+		android:orientation="vertical"
+		android:paddingBottom="20dp"
+		android:paddingLeft="13dp">
+
+		<TextView
+			android:id="@+id/tv_baozi_describe"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:text=""
+			android:textColor="#2f333b"
+			android:textSize="15sp"/>
+
+		<TextView
+			android:id="@+id/tv_real_pay"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="9dp"
+			android:text=""
+			android:textColor="#9099a6"
+			android:textSize="12sp"/>
+
+		<TextView
+			android:id="@+id/tv_hintinfo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="9dp"
+			android:text=""
+			android:textColor="#9099a6"
+			android:textSize="12sp"
+			android:visibility="gone"/>
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/wjika_client_spilt_line"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="49dp"
+		android:layout_marginRight="49dp"
+		android:layout_marginTop="30dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/pay_result_left_btn"
+			android:layout_width="117dp"
+			android:layout_height="35dp"
+			android:layout_weight="1.0"
+			android:background="@drawable/pay_result_btn_bg"
+			android:text="去包子商城"
+			android:textColor="#9099a6"/>
+
+		<Button
+			android:id="@+id/pay_result_right_btn"
+			android:layout_width="117dp"
+			android:layout_height="35dp"
+			android:layout_marginLeft="28dp"
+			android:layout_weight="1.0"
+			android:background="@drawable/pay_result_btn_bg"
+			android:text="完成"
+			android:textColor="#9099a6"/>
+	</LinearLayout>
+</LinearLayout>

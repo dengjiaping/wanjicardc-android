@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wjika_client_common_bg"
+    android:orientation="vertical">
+    <include layout="@layout/load_data_status_view"/>
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/wjika_client_common_bg"
+            android:orientation="vertical">
+
+            <include layout="@layout/card_details_image_view" />
+            <include layout="@layout/card_details_title" />
+            <include layout="@layout/privilege_server_power" />
+            <include layout="@layout/card_details_use_explain" />
+            <include layout="@layout/store_support_view" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/cell_white_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:textSize="14sp"
+            android:textColor="#2f333b"
+            android:text="特价："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/bottom_card_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/wjika_client_comment_marginleft"
+            android:layout_weight="1.0"
+            android:gravity="left|center_vertical"
+            android:text=""
+            android:textColor="@color/wjika_client_red"
+            android:textSize="@dimen/font_size_a" />
+
+        <TextView
+            android:id="@+id/bottom_click_pay"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/btn_card_login_margin"
+            android:background="@drawable/ic_button_normal"
+            android:gravity="center"
+            android:text="@string/card_current_charge"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_b" />
+    </LinearLayout>
+</LinearLayout>

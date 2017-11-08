@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/person_orderdetail_top" />
+
+    <View
+        android:id="@+id/electron_line"
+        style="@style/person_split_left_right" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="15.5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="15dp">
+
+        <LinearLayout
+            android:id="@+id/electron_order_item_cover"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp">
+
+            <include layout="@layout/electron_small_logo_view" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/electron_order_item_cover"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/electron_order_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/wjika_client_dark_grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/electron_order_item_facevalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:textColor="@color/wjika_client_introduce_words"
+                android:textSize="12sp" />
+            <View
+                android:id="@+id/electron_order_item_facevalue2"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/electron_order_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/card_store_price"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/electron_order_item_pay"
+            android:layout_width="78dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_tran_button"
+            android:clickable="true"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="再次购买"
+            android:textColor="@color/wjika_client_title_bg"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

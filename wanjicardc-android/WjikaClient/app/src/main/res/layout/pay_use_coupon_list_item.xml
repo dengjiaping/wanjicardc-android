@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+	android:background="@color/wjika_client_common_bg">
+	<RadioButton
+		android:id="@+id/use_coupon_select_rb"
+		android:layout_width="15dp"
+		android:layout_height="15dp"
+		android:layout_marginLeft="12dp"
+		android:layout_gravity="center"
+		android:focusable="false"
+		android:clickable="false"
+		android:focusableInTouchMode="false"
+		android:button="@drawable/radio_button_selector"/>
+
+	<include layout="@layout/person_coupon_item"/>
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_gravity="bottom"
+             android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="23dp"
+		android:background="@color/white"
+		android:orientation="vertical">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="101dp"
+			android:layout_marginLeft="172dp"
+			android:paddingRight="12dp">
+
+			<ImageView
+				android:id="@+id/exchange_exchange_close"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="12dp"
+				android:src="@drawable/exchange_exchange_close"/>
+
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="15dp"
+				android:gravity="center"
+				android:layout_centerVertical="true"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/exchange_exchange_name"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/wjika_client_dark_grey"
+					android:textSize="15sp"/>
+
+				<TextView
+					android:id="@+id/exchange_exchange_facevalue"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/exchange_exchange_name"
+					android:layout_marginTop="10dp"
+					android:textColor="@color/person_main_baozi_num"
+					android:textSize="17sp"/>
+
+				<TextView
+					android:id="@+id/exchange_exchange_bunnum"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/exchange_exchange_name"
+					android:layout_marginTop="16dp"
+					android:layout_toRightOf="@+id/exchange_exchange_facevalue"
+					android:layout_marginLeft="10dp"
+					android:textColor="@color/wjika_client_introduce_words"
+					android:textSize="12sp"/>
+
+			</RelativeLayout>
+
+		</RelativeLayout>
+
+		<View style="@style/person_split_match"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="42dp"
+			android:gravity="center_vertical"
+			android:paddingLeft="12dp"
+			android:paddingRight="12dp"
+			android:text="@string/exchange_choose_face"
+			android:textColor="@color/wjika_client_dark_grey"
+			android:textSize="14sp"/>
+
+		<com.common.view.GridViewForInner
+			android:id="@+id/exchange_exchange_grid"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:focusable="false"
+			android:gravity="center_horizontal"
+			android:horizontalSpacing="10dp"
+			android:listSelector="@color/transparent"
+			android:numColumns="3"
+			android:paddingBottom="22dp"
+			android:paddingLeft="12dp"
+			android:paddingRight="12dp"
+			android:verticalSpacing="10dp"/>
+
+		<TextView
+			android:id="@+id/exchange_exchange_exchange"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:background="@color/wjika_client_title_bg"
+			android:gravity="center"
+			android:text="@string/exchange_exchange_now"
+			android:textColor="@color/white"
+			android:textSize="17sp"/>
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_width="140dp"
+		android:layout_height="100dp"
+		android:layout_marginLeft="12dp"
+		android:background="@drawable/exchange_card_bg">
+
+		<android.support.v7.widget.CardView
+			android:id="@+id/exchange_carditem_cardview"
+			android:layout_width="109dp"
+			android:layout_height="62dp"
+			android:layout_centerInParent="true"
+			app:cardBackgroundColor="@color/wjika_client_card_blue"
+			app:cardCornerRadius="5dp">
+
+			<com.facebook.drawee.view.SimpleDraweeView
+				android:id="@+id/exchange_carditem_logo"
+				android:layout_width="64dp"
+				android:layout_height="40dp"
+				android:layout_gravity="center"
+				app:actualImageScaleType="fitCenter"
+				app:background="@drawable/default_image_bg"
+				app:fadeDuration="500"
+				app:failureImage="@drawable/default_image_bg"
+				app:placeholderImage="@drawable/default_image_bg"/>
+		</android.support.v7.widget.CardView>
+	</RelativeLayout>
+</FrameLayout>

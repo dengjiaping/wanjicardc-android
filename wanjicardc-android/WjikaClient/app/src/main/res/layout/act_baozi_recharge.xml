@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<include layout="@layout/load_data_status_view"/>
+
+	<ScrollView
+		android:id="@+id/sv_parentview"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:background="@color/wjika_client_common_bg"
+		android:scrollbars="none">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:id="@+id/ll_recharge"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:orientation="vertical"
+				android:paddingLeft="13dp"
+				android:visibility="visible">
+
+				<TextView
+					android:id="@+id/chare_money_title"
+					android:layout_width="wrap_content"
+					android:layout_height="49dp"
+					android:layout_marginTop="8dp"
+					android:background="@color/white"
+					android:gravity="center_vertical"
+					android:text="@string/person_recharge_select_price"
+					android:textColor="@color/wjika_client_middle_gray"
+					android:textSize="@dimen/font_size_a"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="49dp"
+					android:layout_alignBottom="@id/chare_money_title"
+					android:layout_marginLeft="18dp"
+					android:layout_toRightOf="@id/chare_money_title"
+					android:gravity="center_vertical"
+					android:text="(1元=1个包子)"
+					android:textColor="#9099a6"
+					android:textSize="12sp"/>
+			</RelativeLayout>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:background="@color/wjika_client_spilt_line"/>
+
+			<LinearLayout
+				android:id="@+id/ll_person_recharge_amount"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:visibility="visible"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:background="@color/wjika_client_spilt_line"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:layout_marginTop="15dp"
+				android:background="@color/wjika_client_spilt_line"/>
+
+			<include layout="@layout/pay_choose_way"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:background="@color/wjika_client_spilt_line"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:layout_marginTop="15dp"
+				android:background="@color/wjika_client_spilt_line"/>
+
+			<RelativeLayout
+				android:id="@+id/rl_charge_agree"
+				android:layout_width="match_parent"
+				android:layout_height="49dp"
+				android:background="@color/white"
+				android:paddingLeft="13dp"
+				android:paddingRight="13dp">
+
+				<CheckBox
+					android:id="@+id/cb_charge_agree"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:button="@drawable/radio_button_selector"
+					android:checked="true"
+					android:focusable="true"
+					/>
+
+				<TextView
+					android:id="@+id/tv_agree"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="12dp"
+					android:layout_toRightOf="@id/cb_charge_agree"
+					android:gravity="left"
+					android:text="《充值协议》"
+					android:textColor="@color/wjika_client_middle_gray"/>
+
+				<ImageView
+					android:id="@+id/iv_arrow"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:background="@drawable/ic_right_arrow"/>
+
+			</RelativeLayout>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:layout_marginBottom="15dp"
+				android:background="@color/wjika_client_spilt_line"/>
+		</LinearLayout>
+	</ScrollView>
+
+	<View
+		android:id="@+id/v_Line_pay"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="@color/wjika_client_spilt_line"/>
+
+	<LinearLayout
+		android:id="@+id/ll_pay_btn"
+		android:layout_width="match_parent"
+		android:layout_height="49dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/person_recharge_money"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="13dp"
+			android:layout_weight="1"
+			android:gravity="center_vertical|left"
+			android:textColor="@color/wjika_client_middle_gray"/>
+
+		<TextView
+			android:id="@+id/person_recharge_submit"
+			android:layout_width="101dp"
+			android:layout_height="35dp"
+			android:layout_gravity="right|center_vertical"
+			android:layout_marginRight="13dp"
+			android:background="@drawable/ic_button"
+			android:clickable="false"
+			android:gravity="center"
+			android:text="@string/card_current_charge"
+			android:textColor="@color/white"/>
+	</LinearLayout>
+</LinearLayout>

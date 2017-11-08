@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<ListView
+		android:id="@+id/djpay_rate_list"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:divider="@color/wjika_client_spilt_line"
+		android:dividerHeight="1px"
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp"/>
+
+	<View style="@style/person_split_left_right"/>
+</LinearLayout>

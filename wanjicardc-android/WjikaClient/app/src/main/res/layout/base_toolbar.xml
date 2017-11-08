@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+                                   xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="48dp"
+                                   android:background="@color/wjika_client_title_bg"
+                                   android:minHeight="?attr/actionBarSize"
+                                   app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                                   app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+	<ImageView
+		android:id="@+id/left_button"
+		android:layout_width="18dp"
+		android:layout_height="18dp"
+		android:layout_gravity="left|center_vertical"
+		android:layout_marginLeft="@dimen/wjika_client_title_marginleft"
+		android:gravity="center"
+		android:scaleType="center"
+		android:visibility="gone"/>
+
+	<TextView
+		android:id="@+id/left_btn_with_arrow"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="left|center_vertical"
+		android:layout_marginLeft="@dimen/wjika_client_title_marginleft"
+		android:textColor="@color/white"
+		android:textSize="15sp"
+		android:visibility="gone"/>
+
+	<ImageView
+		android:id="@+id/location_arrow"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:background="@drawable/home_btn_location"
+		android:visibility="gone"/>
+
+	<TextView
+		android:id="@+id/toolbar_title"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_gravity="center"
+		android:drawablePadding="8dp"
+		android:gravity="center"
+		android:textColor="@color/white"
+		android:textSize="@dimen/font_size_a"
+		android:visibility="gone"/>
+
+	<ImageView
+		android:id="@+id/right_button"
+		android:layout_width="48dp"
+		android:layout_height="match_parent"
+		android:layout_gravity="right|center_vertical"
+		android:gravity="center"
+		android:scaleType="center"
+		android:src="@drawable/nav_btn_search_nor"
+		android:visibility="gone"/>
+
+	<TextView
+		android:id="@+id/rigth_text"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_gravity="right|center_vertical"
+		android:layout_marginRight="@dimen/wjika_client_title_marginright"
+		android:gravity="center"
+		android:textColor="@color/white"
+		android:visibility="gone"/>
+</android.support.v7.widget.Toolbar>

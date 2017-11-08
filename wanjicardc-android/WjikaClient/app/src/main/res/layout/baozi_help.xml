@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wjika_client_bg_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:text="1.什么是包子？"
+            android:textSize="15sp"
+            android:textColor="#2f333b" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="9dp"
+            android:text="包子是万集卡用户通过充值获取的企业代金币。"
+            android:textSize="15sp"
+            android:textColor="#777f89" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="26dp"
+            android:text="2.包子使用规则"
+            android:textSize="15sp"
+            android:textColor="#2f333b" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="9dp"
+            android:text="包子与人民币的兑换比例为1:1，即1元=1包子；使用网银充值的用户，一天最多可以充值2000元人民币。"
+            android:textSize="15sp"
+            android:textColor="#777f89" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="26dp"
+            android:text="3.包子的作用"
+            android:textSize="15sp"
+            android:textColor="#2f333b" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="9dp"
+            android:text="包子可以购买万集卡App包子商城中的商品及服务。"
+            android:textSize="15sp"
+            android:textColor="#777f89" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="26dp"
+            android:text="4.包子的好处"
+            android:textSize="15sp"
+            android:textColor="#2f333b" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="9dp"
+            android:text="用包子购买万集卡App中的商品，可以享受更高折扣，并且更加方便快捷。"
+            android:textSize="15sp"
+            android:textColor="#777f89" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="26dp"
+            android:text="5.包子有没有安全风险"
+            android:textSize="15sp"
+            android:textColor="#2f333b" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="9dp"
+            android:text="您在万集卡中所有的资产，均由平安银行托管，不存在资产风险。"
+            android:textSize="15sp"
+            android:textColor="#777f89" />
+    </LinearLayout>
+</ScrollView>

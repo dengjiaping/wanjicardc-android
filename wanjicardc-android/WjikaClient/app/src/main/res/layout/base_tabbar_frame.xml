@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_back"
+              android:showDividers="middle"
+              android:divider="@drawable/ecard_divider_bg">
+
+	<!-- 内容界面 -->
+	<FrameLayout
+		android:id="@+id/frame_container"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"/>
+
+	<LinearLayout
+		android:id="@+id/frame_tabbar"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/white"
+		android:showDividers="middle"
+		android:divider="@drawable/horizontal_divider_bg">
+
+		<TextView
+			android:id="@+id/tv_tab_payment"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:textSize="17sp"
+			android:textColor="@color/wjika_client_middle_gray"
+			android:text="@string/payment_title"/>
+
+		<TextView
+			android:id="@+id/tv_tab_rate"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:textSize="17sp"
+			android:textColor="@color/wjika_client_middle_gray"
+			android:text="@string/rate_title"/>
+
+		<TextView
+			android:id="@+id/tv_tab_account"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:textSize="17sp"
+			android:textColor="@color/wjika_client_middle_gray"
+			android:text="@string/account_title"/>
+	</LinearLayout>
+</LinearLayout>

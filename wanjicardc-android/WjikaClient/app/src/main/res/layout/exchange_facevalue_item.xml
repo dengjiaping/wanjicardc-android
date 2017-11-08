@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/exchange_griditem"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/exchange_griditem_normal"
+              android:gravity="center"
+              android:minHeight="60dp"
+              android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/exchange_face_facevalue"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:textColor="@color/wjika_client_middle_gray"
+		android:textSize="19sp"/>
+
+	<TextView
+		android:id="@+id/exchange_face_bunnum"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_marginTop="7dp"
+		android:textColor="@color/wjika_client_middle_gray"
+		android:textSize="11sp"/>
+
+</LinearLayout>

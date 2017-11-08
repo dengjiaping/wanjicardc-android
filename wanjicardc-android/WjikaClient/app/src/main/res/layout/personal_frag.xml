@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wjika_client_common_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/person_person_back">
+
+            <ImageView
+                android:id="@+id/person_main_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="16dp"
+                android:src="@drawable/person_setting_icon" />
+
+            <FrameLayout
+                android:id="@+id/person_main_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="14dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:src="@drawable/message_icon" />
+
+                <TextView
+                    android:id="@+id/person_message_dot"
+                    android:layout_width="9dp"
+                    android:layout_height="9dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/red_circle"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/person_main_avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp"
+                fresco:actualImageScaleType="focusCrop"
+                fresco:failureImage="@drawable/default_avatar_bg"
+                fresco:placeholderImage="@drawable/default_avatar_bg"
+                fresco:roundAsCircle="true" />
+
+            <TextView
+                android:id="@+id/person_main_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="14dp"
+                android:layout_marginTop="114dp"
+                android:padding="15dp"
+                android:textColor="@color/main_module_back"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/person_main_auth"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/wjika_client_bg_white"
+            android:drawableLeft="@drawable/location_prompt"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/ic_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="@string/person_auth_info"
+            android:textColor="@color/wjika_client_introduce_words"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/PersonItem"
+            android:drawableLeft="@drawable/person_recharge_icon"
+            android:drawableRight="@null"
+            android:text="@string/message_center_asset" />
+
+        <View style="@style/person_split_match" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/person_main_baozi_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                fresco:failureImage="@drawable/person_main_property_baozi"
+                fresco:placeholderImage="@drawable/person_main_property_baozi" />
+
+            <!--<LinearLayout
+                android:id="@+id/person_main_baozi_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">-->
+
+                <TextView
+                    android:id="@+id/person_main_baozi_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/wjika_client_introduce_words"
+                    android:textSize="14sp" />
+
+               <!-- <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/wjika_client_introduce_words"
+                    android:textSize="14sp" />
+            </LinearLayout>-->
+
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/person_main_baozi_line" />
+
+            <TextView
+                android:id="@+id/person_main_baozi_recharge"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:enabled="false"
+                android:background="@drawable/ic_button"
+                android:gravity="center"
+                android:text="@string/card_current_charge"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white">
+
+            <View style="@style/person_split_left_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/white"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/person_main_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/person_main_coupon_num"
+                    style="@style/person_property_type_num" />
+
+                <TextView
+                    style="@style/person_property_type_name"
+                    android:text="@string/person_special_amount" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/person_main_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/person_main_merchant_num"
+                    style="@style/person_property_type_num" />
+
+                <TextView
+                    style="@style/person_property_type_name"
+                    android:text="@string/person_merchant_card" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/person_main_electric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/person_main_electric_num"
+                    style="@style/person_property_type_num" />
+
+                <TextView
+                    style="@style/person_property_type_name"
+                    android:text="@string/person_electric_card" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/person_split_match" />
+
+        <View style="@style/person_split_margin_top" />
+
+        <TextView
+            android:id="@+id/person_main_order"
+            style="@style/PersonItem"
+            android:drawableLeft="@drawable/person_order_icon"
+            android:text="@string/person_my_order" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white">
+
+            <View style="@style/person_split_left_right" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/person_main_consumption"
+            style="@style/PersonItem"
+            android:drawableLeft="@drawable/person_consume_icon"
+            android:text="@string/person_consumption_history" />
+
+
+        <View style="@style/person_split_match" />
+
+        <View style="@style/person_split_margin_top" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/person_main_pay_setting"
+                style="@style/PersonItem"
+                android:drawableLeft="@drawable/person_pay_setting_icon"
+                android:text="@string/person_pay_pwd_setting" />
+
+            <TextView
+                android:id="@+id/person_main_pay_setting_dot"
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/red_circle"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/person_split_match" />
+
+        <TextView
+            android:id="@+id/person_main_invite"
+            style="@style/PersonItem"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/person_invite_icon"
+            android:text="@string/person_invite_friend"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>
+

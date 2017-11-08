@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/person_orderdetail_top" />
+
+    <View
+        android:id="@+id/card_line"
+        style="@style/person_split_left_right" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="15.5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="15dp">
+
+        <LinearLayout
+            android:id="@+id/person_order_item_cover"
+            android:layout_width="109dp"
+            android:layout_height="61dp"
+            android:layout_marginRight="15dp">
+
+            <include layout="@layout/card_small_logo_view" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/person_order_item_cover"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/person_order_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/wjika_client_dark_grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/person_order_item_facevalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/wjika_client_introduce_words"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/person_order_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/wjika_client_price_red"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

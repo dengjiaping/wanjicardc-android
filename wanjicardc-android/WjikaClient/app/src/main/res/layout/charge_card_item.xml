@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/rb_person_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:button="@null"
+        android:checked="true"
+        android:drawableRight="@drawable/radio_button_selector"
+        android:text="￥0.01" />
+    <View
+        android:id="@+id/vRechargeLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/wjika_client_spilt_line" />
+</LinearLayout>

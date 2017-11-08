@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/wjika_client_common_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/load_data_status_view"/>
+
+    <TextView
+        android:id="@+id/person_coupon_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/card_details_use_explian"
+        android:textColor="@color/wjika_client_title_bg"
+        android:textSize="12sp"/>
+
+    <com.common.widget.FootLoadingListView
+        android:id="@+id/person_coupon_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:divider="@null"
+        android:scrollbars="none"/>
+</LinearLayout>

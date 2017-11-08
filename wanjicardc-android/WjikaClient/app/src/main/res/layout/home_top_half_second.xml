@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<!--热门品牌-->
+	<include layout="@layout/home_top_hotbrand"/>
+
+	<View style="@style/person_split_match"/>
+
+	<!--活动页-->
+	<include layout="@layout/home_active_page"/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="10dp"
+		android:background="@color/wjika_client_common_bg"/>
+
+	<View style="@style/person_split_match"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:gravity="center_vertical"
+		android:paddingBottom="13dp"
+		android:paddingLeft="12dp"
+		android:paddingTop="13dp"
+		android:background="@color/main_module_back"
+		android:text="@string/recommend_for_me"
+		android:textColor="@color/wjika_client_dark_grey"
+		android:textSize="14sp"/>
+
+	<View style="@style/person_split_match"/>
+</LinearLayout>

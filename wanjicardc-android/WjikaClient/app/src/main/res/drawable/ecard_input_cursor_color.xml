@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shape="rectangle">
+	<!--修改光标颜色不能直接使用color，需要通过drawable来设置，size必须要不然显示不出来-->
+	<size android:width="1dp" />
+	<solid android:color="@color/wjika_client_primary_visual_blue" />
+</shape>

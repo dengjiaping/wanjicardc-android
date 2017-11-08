@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/person_orderdetail_top" />
+
+    <View
+        android:id="@+id/baozi_line"
+        style="@style/person_split_left_right" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="15.5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="15dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/baozi_img_cover"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/order_icon_baozi_recharge"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/baozi_img_cover"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/baozi_order_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/wjika_client_dark_grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/baozi_order_item_facevalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/wjika_client_introduce_words"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <View
+                android:id="@+id/baozi_order_item_facevalue2"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/baozi_order_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/wjika_client_price_red"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

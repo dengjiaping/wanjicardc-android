@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/wjika_client_common_bg"
+              android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:gravity="center"
+		android:paddingBottom="22dp"
+		android:paddingTop="22dp">
+
+		<TextView
+			android:id="@+id/consume_result"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/pay_success_icon"
+			android:drawablePadding="15dp"
+			android:text="支付成功"
+			android:textColor="@color/wjika_client_title_bg"
+			android:textSize="20sp"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/pay_result_business"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="1px"
+		android:background="@color/white"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:padding="15dp">
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:text="收款商户"
+			android:textColor="@color/wjika_client_middle_gray"/>
+
+		<TextView
+			android:id="@+id/pay_result_orderno"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/wjika_client_middle_gray"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/pay_result_amount"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="1px"
+		android:background="@color/white"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:padding="15dp">
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:text="消费金额"
+			android:textColor="@color/wjika_client_middle_gray"/>
+
+		<TextView
+			android:id="@+id/pay_result_consume_amount"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/wjika_client_middle_gray"/>
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:background="@color/transparent"/>
+
+	<Button
+		android:id="@+id/pay_result_close"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:layout_marginTop="40dp"
+		android:background="@drawable/ic_button_normal"
+		android:text="关闭"
+		android:textColor="@color/white"/>
+</LinearLayout>

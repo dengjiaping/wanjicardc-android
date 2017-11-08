@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/wjika_client_common_bg"
+              android:orientation="vertical">
+
+	<android.support.v4.widget.Space
+		android:layout_width="match_parent"
+		android:layout_height="20dp"/>
+
+	<android.support.v7.widget.CardView
+		android:id="@+id/input_ecard_color"
+		android:layout_width="match_parent"
+		android:layout_height="158dp"
+		android:layout_marginLeft="40dp"
+		android:layout_marginRight="40dp"
+		app:cardBackgroundColor="@color/wjika_client_card_blue"
+		app:cardCornerRadius="5dp"
+		app:cardElevation="5dp"
+		app:cardMaxElevation="8dp">
+
+		<com.facebook.drawee.view.SimpleDraweeView
+			android:id="@+id/input_ecard_logo"
+			android:layout_width="120dp"
+			android:layout_height="75dp"
+			android:layout_gravity="center"
+			app:actualImageScaleType="fitCenter"
+			app:background="@drawable/default_image_bg"
+			app:fadeDuration="500"
+			app:failureImage="@drawable/default_image_bg"
+			app:placeholderImage="@drawable/default_image_bg"/>
+
+	</android.support.v7.widget.CardView>
+
+	<android.support.v4.widget.Space
+		android:layout_width="match_parent"
+		android:layout_height="25dp"/>
+
+	<View style="@style/person_split_match"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:background="@color/white"
+		android:gravity="center_vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/wjika_client_comment_marginleft"
+			android:paddingRight="@dimen/wjika_client_comment_marginleft"
+			android:text="卡号："
+			android:textColor="@color/wjika_client_middle_gray"
+			android:textSize="@dimen/font_size_c"/>
+
+		<EditText
+			android:id="@+id/input_ecard_no"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@null"
+			android:hint="请输入您的卡号"
+			android:imeOptions="actionNext"
+			android:inputType="text"
+			android:maxLines="1"
+			android:paddingRight="@dimen/wjika_client_comment_marginright"
+			android:textColor="@color/wjika_client_dark_grey"
+			android:textColorHint="@color/wjika_client_hint_words"
+			android:textSize="@dimen/font_size_c"/>
+	</LinearLayout>
+
+	<View style="@style/person_split_match"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:background="@color/white"
+		android:gravity="center_vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/wjika_client_comment_marginleft"
+			android:paddingRight="@dimen/wjika_client_comment_marginleft"
+			android:text="密码："
+			android:textColor="@color/wjika_client_middle_gray"
+			android:textSize="@dimen/font_size_c"/>
+
+		<EditText
+			android:id="@+id/input_ecard_pwd"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@null"
+			android:hint="请输入您的密码"
+			android:imeOptions="actionGo"
+			android:inputType="text"
+			android:maxLines="1"
+			android:paddingRight="@dimen/wjika_client_comment_marginright"
+			android:textColor="@color/wjika_client_dark_grey"
+			android:textColorHint="@color/wjika_client_hint_words"
+			android:textSize="@dimen/font_size_c"/>
+	</LinearLayout>
+
+	<View style="@style/person_split_match"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:paddingBottom="30dp"
+		android:paddingTop="22dp"
+		android:text="*请确保您的卡与您选择的面值对应，否则将对您的信用造成严重影响"
+		android:textColor="@color/wjika_client_gray"
+		android:textSize="11sp"/>
+
+	<TextView
+		android:id="@+id/input_ecard_confirm"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:layout_marginLeft="12dp"
+		android:layout_marginRight="12dp"
+		android:background="@drawable/ic_button"
+		android:enabled="false"
+		android:gravity="center"
+		android:text="确定"
+		android:textColor="@color/white"/>
+</LinearLayout>

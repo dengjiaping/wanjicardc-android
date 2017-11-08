@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/wjika_client_common_bg"
+              android:orientation="vertical">
+
+	<!-- <LinearLayout
+		 android:layout_width="match_parent"
+		 android:layout_height="wrap_content"
+		 android:background="@color/white"
+		 android:orientation="vertical"
+		 android:paddingBottom="17dp"
+		 android:paddingLeft="12dp"
+		 android:paddingRight="12dp"
+		 android:paddingTop="17dp">
+
+		 <RelativeLayout
+			 android:layout_width="match_parent"
+			 android:layout_height="wrap_content">
+
+			 <TextView
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:text="接收新消息通知"
+				 android:textColor="@color/wjika_client_dark_grey"
+				 android:textSize="15sp"/>
+
+			 <TextView
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:layout_alignParentRight="true"
+				 android:text="已开启"
+				 android:textColor="@color/wjika_client_hint_words"
+				 android:textSize="14sp"/>
+		 </RelativeLayout>
+
+		 <TextView
+			 android:layout_width="match_parent"
+			 android:layout_height="wrap_content"
+			 android:layout_marginTop="8dp"
+			 android:lineSpacingExtra="4dp"
+			 android:text="要开启或者停用要开启或者停用要开启或者停用要开启或者停用要开启或者停用"
+			 android:textColor="@color/wjika_client_introduce_words"
+			 android:textSize="13sp"/>
+	 </LinearLayout>-->
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="vertical"
+		android:paddingBottom="17dp"
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp"
+		android:paddingTop="17dp">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/person_location"
+				android:textColor="@color/wjika_client_dark_grey"
+				android:textSize="15sp"/>
+
+			<TextView
+				android:id="@+id/setting_location_state"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:text="已开启"
+				android:textColor="@color/wjika_client_hint_words"
+				android:textSize="14sp"/>
+		</RelativeLayout>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:lineSpacingExtra="4dp"
+			android:text="@string/person_setting_location_info"
+			android:textColor="@color/wjika_client_introduce_words"
+			android:textSize="13sp"/>
+	</LinearLayout>
+
+	<View
+		style="@style/person_split_match"/>
+
+	<View
+		style="@style/person_split_match"
+		android:layout_marginTop="10dp"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/person_setting_clean_cache"
+			style="@style/PersonItemCommon"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:text="@string/person_setting_clear"/>
+
+		<View
+			style="@style/person_split_left_right"/>
+
+		<TextView
+			android:id="@+id/person_setting_about_us"
+			style="@style/PersonItemCommon"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:layout_marginTop="1px"
+			android:text="@string/person_about_us_title"/>
+	</LinearLayout>
+
+	<View
+		style="@style/person_split_match"/>
+
+	<Button
+		android:id="@+id/person_setting_login_out"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:layout_marginTop="30dp"
+		android:background="@drawable/ic_button_normal"
+		android:text="@string/person_logout"
+		android:textColor="@color/white"/>
+
+</LinearLayout>

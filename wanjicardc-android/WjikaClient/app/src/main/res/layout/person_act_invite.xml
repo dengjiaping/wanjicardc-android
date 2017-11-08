@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+	<com.facebook.drawee.view.SimpleDraweeView
+		android:id="@+id/person_invite_img"
+		android:layout_width="330dp"
+		android:layout_height="330dp"
+		android:layout_marginTop="15dp"
+		android:layout_gravity="center_horizontal"
+		app:placeholderImage="@drawable/default_image_bg"
+		app:failureImage="@drawable/default_image_bg"/>
+
+	<Button
+		android:id="@+id/person_invite_friend"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:layout_marginTop="57dp"
+		android:layout_marginLeft="25dp"
+		android:layout_marginRight="25dp"
+		android:background="@drawable/ic_button_normal"
+		android:textColor="@color/white"
+		android:text="@string/person_friend_recommend"/>
+
+	<Button
+		android:id="@+id/person_invite_share"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dp"
+		android:layout_marginLeft="25dp"
+		android:layout_marginRight="25dp"
+		android:background="@drawable/ic_tran_button"
+		android:textColor="@color/wjika_client_title_bg"
+		android:text="@string/person_friend_share"
+        android:visibility="gone"/>
+</LinearLayout>

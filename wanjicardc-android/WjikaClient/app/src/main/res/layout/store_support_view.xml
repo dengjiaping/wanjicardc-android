@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/layout_support_store"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginTop="@dimen/wjika_client_comment_margintop"
+              android:background="@drawable/cell_white_bg"
+              android:orientation="vertical">
+
+	<RelativeLayout
+		android:id="@+id/store_shop_more"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/txt_support_store_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="15dp"
+			android:layout_marginLeft="@dimen/wjika_client_comment_marginleft"
+			android:layout_marginTop="15dp"
+			android:gravity="center_vertical"
+			android:text="@string/card_detail_store_more"
+			android:textColor="@color/wjika_client_dark_grey"
+			android:textSize="@dimen/font_size_c"/>
+
+		<LinearLayout
+			android:id="@+id/store_showcase"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerInParent="true">
+			<TextView
+				android:id="@+id/support_store_count"
+				android:layout_marginRight="8dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:text="查看全部"
+				android:textColor="@color/wjika_client_introduce_words"
+				android:textSize="@dimen/font_size_e"/>
+			<ImageView
+				android:id="@+id/support_store_count_img"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="@dimen/btn_card_login_margin"
+				android:background="@drawable/ic_right_arrow"/>
+		</LinearLayout>
+	</RelativeLayout>
+
+	<View
+		android:layout_marginLeft="12dp"
+		android:layout_marginRight="12dp"
+		android:id="@+id/support_store_divider"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:layout_marginTop="4dp"
+		android:background="#e6e7e8"/>
+
+	<com.common.view.ListViewForInner
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp"
+		android:id="@+id/store_correlation_shop"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/support_store_divider"
+		android:background="@color/white"
+		android:divider="@drawable/cell_white_bg"
+		android:dividerHeight="1px"
+		android:focusable="false"
+		android:paddingTop="5dp"/>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#88000000"
+              android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<ListView
+			android:id="@+id/listView1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="3"
+			android:background="#f5f8fa"
+			android:cacheColorHint="@android:color/transparent"
+			android:divider="#e6e7e8"
+			android:dividerHeight="1px"
+			android:scrollbars="none"/>
+
+		<!--<View-->
+		<!--android:layout_width="1dp"-->
+		<!--android:layout_height="fill_parent"-->
+		<!--android:background="@color/distance_spinner_divider" />-->
+
+		<ListView
+			android:id="@+id/listView2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="2"
+			android:background="#f5f8fa"
+			android:cacheColorHint="@android:color/transparent"
+			android:divider="#e6e7e8"
+			android:dividerHeight="0dp"
+			android:scrollbars="none"/>
+	</LinearLayout>
+
+	<View
+		android:id="@+id/spinner_gap"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"/>
+
+</LinearLayout>

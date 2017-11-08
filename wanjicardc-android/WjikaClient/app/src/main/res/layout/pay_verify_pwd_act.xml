@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wjika_client_common_bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/pay_verify_pwd_label"
+        android:textSize="@dimen/font_size_c"
+        android:layout_marginTop="75dp"/>
+    <com.wjika.client.widget.PasswordInputView
+        android:id="@+id/pay_pwd_input"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:cursorVisible="false"
+        android:focusable="true"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:padding="0dp"
+        custom:borderColor="@color/border_gray"
+        custom:borderRadius="@dimen/custom_ev_border_radius"
+        custom:borderWidth="2dp"
+        custom:passwordColor="@color/wjika_client_title_bg"
+        custom:passwordLength="6"
+        custom:passwordWidth="8dp" />
+    <TextView
+        android:id="@+id/txt_forget_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verify_pwd_forget"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="12dp"
+        android:drawablePadding="8dp"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:textColor="@color/wjika_client_introduce_words"
+        android:textSize="@dimen/font_size_e"
+        />
+</LinearLayout>

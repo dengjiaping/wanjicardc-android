@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/wjika_client_common_bg"
+              android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="188dp"
+		android:background="@drawable/my_steam_bun_bg">
+
+		<ImageView
+			android:id="@+id/iv_back"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="15dp"
+			android:paddingLeft="15dp"
+			android:paddingRight="15dp"
+			android:paddingTop="16dp"
+			android:src="@drawable/ic_back"/>
+
+		<ImageView
+			android:id="@+id/iv_help"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:paddingBottom="10dp"
+			android:paddingLeft="15dp"
+			android:paddingRight="15dp"
+			android:paddingTop="16dp"
+			android:src="@drawable/baozi_btn_help_bg_selector"/>
+
+		<RelativeLayout
+			android:id="@+id/v_baozi"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true">
+
+			<ImageView
+				android:id="@+id/iv_baozi"
+				android:layout_width="45dp"
+				android:layout_height="45dp"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="15dp"
+				android:background="@drawable/mybaozi_image_baozi"/>
+
+			<LinearLayout
+				android:id="@+id/layout_baozi"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="22dp"
+				android:layout_toRightOf="@id/iv_baozi"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/tv_mybaozi"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="我的包子:"
+					android:textColor="@color/white"
+					android:textSize="15sp"/>
+
+				<TextView
+					android:id="@+id/tv_baozi_count"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="9dp"
+					android:shadowColor="#33000000"
+					android:shadowDx="0"
+					android:shadowDy="4"
+					android:shadowRadius="4"
+					android:textColor="#fee255"
+					android:textSize="28sp"/>
+
+				<TextView
+					android:id="@+id/tv_steam_bun_unit"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignBottom="@id/tv_baozi_count"
+					android:layout_marginLeft="6dp"
+					android:layout_toRightOf="@id/tv_baozi_count"
+					android:text="个"
+					android:textColor="@color/white"
+					android:textSize="12sp"/>
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/layout_baozi"
+				android:layout_marginLeft="22dp"
+				android:layout_marginTop="15dp"
+				android:layout_toRightOf="@id/iv_baozi"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="可使用包子:"
+					android:textColor="@color/white"/>
+
+				<TextView
+					android:id="@+id/tv_usable_baozi"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="9dp"
+					android:textColor="@color/white"
+					android:textSize="15sp"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="6dp"
+					android:text="个"
+					android:textColor="@color/white"
+					android:textSize="12sp"/>
+			</LinearLayout>
+
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/rl_bottom_item"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_alignParentBottom="true"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:id="@+id/ll_user_baozi"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_toLeftOf="@+id/v_line_x"
+				android:background="@drawable/baozi_btn_bg_selector"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/mybaozi_ic_baozi"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:text="使用包子"
+					android:textColor="@color/white"
+					android:textSize="14sp"/>
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:id="@+id/ll_baozi_recharge"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_toRightOf="@id/v_line_x"
+				android:background="@drawable/baozi_btn_bg_selector"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/mybaozi_ic_pay"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:text="立即充值"
+					android:textColor="@color/white"
+					android:textSize="14sp"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@id/v_line_x"
+				android:layout_width="1px"
+				android:layout_height="match_parent"
+				android:layout_centerInParent="true"
+				android:background="#0f000000"
+				android:gravity="center_vertical">
+
+				<View
+					android:layout_width="1px"
+					android:layout_height="18dp"
+					android:background="@color/white"/>
+			</LinearLayout>
+
+		</RelativeLayout>
+
+
+	</RelativeLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="44dp"
+		android:background="@color/white"
+		android:gravity="center_vertical"
+		android:paddingLeft="12dp"
+		android:text="交易记录"
+		android:textColor="#2f333b"
+		android:textSize="14sp"/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="@color/wjika_client_spilt_line"/>
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<com.common.widget.FootLoadingListView
+			android:id="@+id/listView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:divider="@color/transparent"
+			android:dividerHeight="0dp"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			android:listSelector="#00000000"
+			android:overScrollMode="never"
+			android:scrollbars="none"/>
+
+		<include layout="@layout/load_data_status_view"/>
+	</FrameLayout>
+
+
+</LinearLayout>
+
+

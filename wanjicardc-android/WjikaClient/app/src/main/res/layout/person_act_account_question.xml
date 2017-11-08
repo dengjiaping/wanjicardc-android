@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/wjika_client_common_bg"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/person_account_question_info"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/wjika_client_common_bg"
+        android:drawableLeft="@drawable/location_prompt"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColor="@color/wjika_client_introduce_words"
+        android:textSize="12sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                style="@style/person_split_match"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <RelativeLayout
+                    android:id="@+id/person_account_setting_question1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+                    <TextView
+                        android:id="@+id/person_account_detail_question1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/account_safe_question_first_select"
+                        android:textColor="@color/wjika_client_middle_gray"
+                        android:textSize="15sp"/>
+
+                    <ImageButton
+                        android:id="@+id/person_account_detail_more1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_right_arrow"/>
+                </RelativeLayout>
+
+                <View
+                    style="@style/person_split_left_right"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/person_account_question_answer1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/account_safe_question_answer"
+                        android:textColor="@color/wjika_client_middle_gray"
+                        android:textSize="15sp"/>
+
+                    <com.wjika.client.widget.ClearEditText
+                        android:id="@+id/person_account_question_result1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableRight="@drawable/search_result_img"
+                        android:hint="@string/account_safe_input_answer"
+                        android:textColorHint="@color/wjika_client_hint_words"
+                        android:textColor="@color/wjika_client_dark_grey"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/person_split_match"/>
+
+            <View
+                style="@style/person_split_margin_top"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <RelativeLayout
+                    android:id="@+id/person_account_setting_question2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+                    <TextView
+                        android:id="@+id/person_account_detail_question2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/account_safe_question_second_select"
+                        android:textColor="@color/wjika_client_middle_gray"
+                        android:textSize="15sp"/>
+
+                    <ImageButton
+                        android:id="@+id/person_account_detail_more2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_right_arrow"/>
+                </RelativeLayout>
+
+                <View
+                    style="@style/person_split_left_right"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/person_account_question_answer2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/account_safe_question_answer"
+                        android:textColor="@color/wjika_client_middle_gray"
+                        android:textSize="15sp"/>
+
+                    <com.wjika.client.widget.ClearEditText
+                        android:id="@+id/person_account_question_result2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableRight="@drawable/search_result_img"
+                        android:hint="@string/account_safe_input_answer"
+                        android:textColorHint="@color/wjika_client_hint_words"
+                        android:textColor="@color/wjika_client_dark_grey"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/person_split_match"/>
+
+            <View
+                style="@style/person_split_margin_top"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <RelativeLayout
+                    android:id="@+id/person_account_setting_question3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+                    <TextView
+                        android:id="@+id/person_account_detail_question3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/account_safe_question_third_select"
+                        android:textColor="@color/wjika_client_middle_gray"
+                        android:textSize="15sp"/>
+
+                    <ImageButton
+                        android:id="@+id/person_account_detail_more3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_right_arrow"/>
+                </RelativeLayout>
+
+                <View
+                    style="@style/person_split_left_right"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/person_account_question_answer3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/account_safe_question_answer"
+                        android:textColor="@color/wjika_client_middle_gray"
+                        android:textSize="15sp"/>
+
+                    <com.wjika.client.widget.ClearEditText
+                        android:id="@+id/person_account_question_result3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableRight="@drawable/search_result_img"
+                        android:hint="@string/account_safe_input_answer"
+                        android:textColorHint="@color/wjika_client_hint_words"
+                        android:textColor="@color/wjika_client_dark_grey"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/person_split_match"/>
+
+            <TextView
+                android:id="@+id/person_account_question_next"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:layout_margin="@dimen/def_padding"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/ic_button"
+                android:enabled="false"
+                android:text="@string/person_auth_id_next"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!--  <TextView
+              android:layout_margin="@dimen/def_padding"
+              android:textSize="@dimen/font_size_i"
+              android:textColor="@color/wjika_client_gray"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="提示：请尽量设置印象深刻且容易记忆的问题和答案"/>-->
+    </ScrollView>
+
+
+</LinearLayout>

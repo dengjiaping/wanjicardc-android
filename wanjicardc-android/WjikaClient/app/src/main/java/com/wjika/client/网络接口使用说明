@@ -1,0 +1,140 @@
+一．	网络接口
+1.	网络请求封装在BaseActivity和BaseFragment中，如有其它位置需要访问网络需要参考BaseActivity实现方式自行处理，开发中应避免在Activity和Fragment中使用请求。
+Entity需要继承BaseEntity
+1.	调用方法
+requestHttpData
+2.	回调方法
+覆盖父类（BaseActivity和BaseFragment）方法
+success,mistake
+3.	接口调试可使用Chrome浏览器
+在浏览器地址栏输入chrome://inspect/#devices
+ 二．	列表
+下拉刷新和上拉加载控件FootLoadingListView
+Adapter可以实现BaseAdapterNew<T>
+ViewHolder不需要在每个Adapter中定义统一使用项目中的ViewHolder用法参考例子代码
+三. 示例
+1.完整的fragment实现包括下拉刷新和加载更多
+public class RaseFragment extends BaseFragment{
+    @ViewInject(R.id.pull_refresh_list)
+    private FootLoadingListView mPullRefreshListView;
+    private RaseListAdapter raseListAdapter;
+
+    public final static int REQUESTCODE_GET_LIVE_MATCH = 0x1; // 比赛列表
+    public final static int REQUESTCODE_GET_LIVE_MATCH_ADD_MORE = 0x2; // 比赛列表更多
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View root = inflater.inflate(R.layout.fragment_rase_list, null);
+        ViewInjectUtils.inject(this, root);
+        return root;
+    }
+
+
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        //loadData(false);
+        showProgressDialog();
+        loadData(false);
+        mPullRefreshListView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener2<ListView>() {
+            @Override
+            public void onPullDownToRefresh(PullToRefreshBase<ListView> refreshView) {
+                loadData(false);
+            }
+
+            @Override
+            public void onPullUpToRefresh(PullToRefreshBase<ListView> refreshView) {
+                loadData(true);
+            }
+        });
+        mPullRefreshListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getActivity(),"position::: "+position,Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    private void loadData(final boolean ismore) {
+        if (ismore) {
+            requestHttpData(String.format(Constants.LeUrls.URL_GET_LIVE_MATCH,raseListAdapter.getPage()),REQUESTCODE_GET_LIVE_MATCH_ADD_MORE);
+
+        } else {
+            requestHttpData(String.format(Constants.LeUrls.URL_GET_LIVE_MATCH,0),REQUESTCODE_GET_LIVE_MATCH);
+
+        }
+    }
+
+    @Override
+    public void success(int requestCode, String data) {
+        super.success(requestCode, data);
+        closeProgressDialog();
+        switch (requestCode){
+            case REQUESTCODE_GET_LIVE_MATCH:
+                mPullRefreshListView.onRefreshComplete();
+                List<MatchDetailEntity> matchDetailEntityList = Dao.getMatchDetailList(data);
+                raseListAdapter = new RaseListAdapter(getActivity(),matchDetailEntityList);
+                mPullRefreshListView.setAdapter(raseListAdapter);
+                if (matchDetailEntityList.size() < Constants.PAGE_SIZE) {
+                    mPullRefreshListView.setCanAddMore(false);
+                } else {
+                    mPullRefreshListView.setCanAddMore(true);
+                }
+                break;
+            case REQUESTCODE_GET_LIVE_MATCH_ADD_MORE:
+                List<MatchDetailEntity> matchDetailEntityList1 = Dao.getMatchDetailList(data);
+                mPullRefreshListView.onRefreshComplete();
+                raseListAdapter.addDatas(matchDetailEntityList1);
+                if (matchDetailEntityList1.size() < Constants.PAGE_SIZE) {
+                    mPullRefreshListView.setCanAddMore(false);
+                }
+                break;
+        }
+
+    }
+
+
+
+    @Override
+    public void mistake(int requestCode, FProtocol.NetDataProtocol.ResponseStatus status, String errorMessage) {
+        super.mistake(requestCode, status, errorMessage);
+        closeProgressDialog();
+        switch (requestCode) {
+            case REQUESTCODE_GET_LIVE_MATCH:
+                mPullRefreshListView.onRefreshComplete();
+                break;
+            case REQUESTCODE_GET_LIVE_MATCH_ADD_MORE:
+                mPullRefreshListView.onRefreshComplete();
+                break;
+        }
+    }
+}
+
+2.完整的Adapter实现
+
+public class RaseListAdapter extends BaseAdapterNew<MatchDetailEntity>{
+    public RaseListAdapter(Context context,List<MatchDetailEntity> mDatas) {
+        super(context, mDatas);
+    }
+    @Override
+    protected int getResourceId(int Position) {
+        return R.layout.rase_list_item;
+    }
+
+    @Override
+    protected void setViewData(View convertView, int position) {
+        MatchDetailEntity entity = getItem(position);
+        ImageView img_away_icon = ViewHolder.get(convertView, R.id.img_away_icon);
+        TextView txt_item_away = ViewHolder.get(convertView,R.id.txt_item_away);
+        img_away_icon.setImageResource(R.drawable.ic_launcher);
+        txt_item_away.setText(position+":::   "+entity.getName());
+
+    }
+}
+

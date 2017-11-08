@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/main_module_back"
+              android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="13dp"
+		android:paddingBottom="13dp"
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp"
+		android:gravity="center_vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/wjika_client_dark_grey"
+			android:textSize="14sp"
+			android:text="@string/main_hot_brand"/>
+
+		<TextView
+			android:id="@+id/tv_main_brand_more"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:drawablePadding="10dp"
+			android:drawableRight="@drawable/payeco_plugin_rightarr"
+			android:textColor="@color/wjika_client_introduce_words"
+			android:text="@string/buy_more"/>
+	</RelativeLayout>
+
+	<com.common.view.GridViewForInner
+		android:id="@+id/gv_main_brand"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:numColumns="4"
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp"
+		android:verticalSpacing="10dp"
+		android:horizontalSpacing="10dp"/>
+</LinearLayout>

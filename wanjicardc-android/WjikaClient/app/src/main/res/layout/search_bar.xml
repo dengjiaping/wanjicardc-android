@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:background="@color/wjika_client_title_bg"
+              android:gravity="center_vertical">
+
+	<ImageView
+		android:id="@+id/btn_back"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:paddingLeft="@dimen/wjika_client_title_marginleft"
+		android:paddingRight="@dimen/wjika_client_comment_marginright"
+		android:src="@drawable/ic_back"/>
+
+	<LinearLayout
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_weight="1.0"
+		android:background="@drawable/search_bg"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:paddingLeft="6dp"
+			android:paddingRight="6dp"
+			android:src="@drawable/ic_drawable_search"/>
+
+		<!--imeOptions属性配合singleLine才有效-->
+		<com.wjika.client.widget.ClearEditText
+			android:id="@+id/edit_search"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@null"
+			android:drawablePadding="10dp"
+			android:drawableRight="@drawable/search_result_img"
+			android:hint="@string/buy_search_hint"
+			android:imeOptions="actionSearch"
+			android:paddingBottom="@dimen/search_title_padding"
+			android:paddingRight="6dp"
+			android:paddingTop="@dimen/search_title_padding"
+			android:singleLine="true"
+			android:textColor="@color/black"
+			android:textColorHint="#c7c7cc"
+			android:textSize="@dimen/font_size_c"/>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/btn_start_search"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:paddingLeft="8dp"
+		android:paddingRight="15dp"
+		android:gravity="center"
+		android:text="@string/wjika_client_search"
+		android:textColor="@color/white"
+		android:textSize="14sp"/>
+</LinearLayout>

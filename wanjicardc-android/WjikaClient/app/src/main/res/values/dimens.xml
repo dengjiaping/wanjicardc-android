@@ -1,0 +1,66 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--所有字号-->
+    <dimen name="font_size_a">18sp</dimen>
+    <dimen name="font_size_b">16sp</dimen>
+    <dimen name="font_size_c">14sp</dimen>
+    <dimen name="font_size_d">13sp</dimen>
+    <dimen name="font_size_e">12sp</dimen>
+    <dimen name="font_size_f">28sp</dimen>
+    <dimen name="font_size_g">20sp</dimen>
+    <dimen name="font_size_h">8sp</dimen>
+    <dimen name="font_size_i">10sp</dimen>
+    <dimen name="font_size_j">15sp</dimen>
+    <dimen name="font_size_dp_a">18dp</dimen>
+    <dimen name="font_size_dp_b">16dp</dimen>
+    <dimen name="font_size_dp_c">14dp</dimen>
+    <dimen name="font_size_dp_d">14dp</dimen>
+    <dimen name="font_size_dp_e">12dp</dimen>
+    <dimen name="font_size_dp_f">28dp</dimen>
+    <dimen name="font_size_dp_g">20dp</dimen>
+    <dimen name="font_size_dp_h">8dp</dimen>
+
+	<!--二维码-->
+	<dimen name="standard_padding">8dp</dimen>
+	<dimen name="half_padding">4dip</dimen>
+    <dimen name="btn_card_login_margin">12dp</dimen>
+	<!--dialogplus-->
+	<dimen name="default_center_margin">16dp</dimen>
+
+    <dimen name="def_padding">15dp</dimen>
+    <dimen name="card_package_height">90dp</dimen>
+    <dimen name="wjika_client_title_margintop">25dp</dimen>
+    <dimen name="wjika_client_title_marginleft">15dp</dimen>
+    <dimen name="wjika_client_title_marginright">15dp</dimen>
+    <dimen name="wjika_client_title_marginbottom">25dp</dimen>
+    <dimen name="list_item_icon_width">100dp</dimen>
+    <dimen name="list_item_icon_height">73dp</dimen>
+    <dimen name="details_item_marginleft">15dp</dimen>
+    <dimen name="wjika_client_comment_marginleft">10dp</dimen>
+    <dimen name="wjika_client_comment_marginright">10dp</dimen>
+    <dimen name="wjika_client_comment_margintop">15dp</dimen>
+    <dimen name="wjika_client_privilege_size">35dp</dimen>
+    <dimen name="wjika_client_privilege_bigsize">40dp</dimen>
+    <dimen name="wjika_client_privilege_padding">10dp</dimen>
+    <dimen name="wjika_client_row_height">48dp</dimen>
+    <dimen name="wjika_client_card_logo_width">55dp</dimen>
+    <dimen name="wjika_client_card_logo_height">35dp</dimen>
+    <dimen name="wjika_client_card_margintop">35dp</dimen>
+    <dimen name="wjika_client_card_marginleft">35dp</dimen>
+    <dimen name="wjika_client_card_marginbottom">15dp</dimen>
+    <dimen name="wjika_client_card_margin">15dp</dimen>
+    <dimen name="search_title_padding">7dp</dimen>
+    <dimen name="wjika_client_comment_height">45dp</dimen>
+    <dimen name="wjika_client_title_height">30dp</dimen>
+    <dimen name="store_list_category_height">44dp</dimen>
+    <dimen name="store_list_logo">65dp</dimen>
+    <dimen name="bannerparallax_image_height">215dp</dimen>
+    <dimen name="main_to_brand_item_height">62dp</dimen>
+    <dimen name="main_to_brand_item_padding">10dp</dimen>
+    <dimen name="main_to_brand_item_logo_height">37dp</dimen>
+    <dimen name="main_to_brand_item_logo_width">58dp</dimen>
+    <dimen name="brand_title_dics">80dp</dimen>
+</resources>

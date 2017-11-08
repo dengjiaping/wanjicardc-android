@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/store_list_result_empty"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="@dimen/wjika_client_comment_marginleft"
+		android:layout_marginRight="@dimen/wjika_client_comment_marginright"
+		android:gravity="center"
+		android:text="@string/search_result_alert"
+		android:visibility="gone"/>
+
+	<include layout="@layout/load_data_status_view"/>
+
+	<com.common.widget.FootLoadingListView
+		android:id="@+id/store_list_correlation"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="12dp"
+		android:cacheColorHint="#00000000"
+		android:divider="#e6e7e8"
+		android:dividerHeight="1px"
+		android:fadingEdge="none"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:listSelector="#00000000"
+		android:overScrollMode="never"/>
+</LinearLayout>

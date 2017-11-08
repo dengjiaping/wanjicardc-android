@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/wjika_client_common_bg"
+              android:orientation="vertical">
+
+	<!-- <include layout="@layout/load_data_status_view" />-->
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_marginBottom="20dp"
+			android:layout_weight="1"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:id="@+id/order_detail_card_item"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"/>
+
+			<View
+				android:id="@+id/person_orderdetail_split1"
+				style="@style/person_split_match"/>
+
+			<View
+				android:id="@+id/person_orderdetail_split2"
+				style="@style/person_split_margin_top"/>
+
+			<LinearLayout
+				android:id="@+id/order_detail_shop_message"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="@color/white"
+					android:paddingBottom="8dp"
+					android:paddingLeft="12dp"
+					android:paddingRight="12dp"
+					android:paddingTop="8dp"
+					android:text="@string/person_order_detail"
+					android:textColor="@color/wjika_client_middle_gray"
+					android:textSize="16sp"/>
+
+				<View style="@style/person_split_left_right"/>
+
+				<TextView
+					android:id="@+id/person_order_info_title"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="1px"
+					android:background="@color/white"
+					android:paddingBottom="12dp"
+					android:paddingLeft="12dp"
+					android:paddingRight="12dp"
+					android:paddingTop="10dp"
+					android:textColor="@color/wjika_client_middle_gray"/>
+
+				<TextView
+					android:id="@+id/person_order_info_address"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="@color/white"
+					android:paddingBottom="12dp"
+					android:paddingLeft="12dp"
+					android:paddingRight="12dp"
+					android:textColor="@color/wjika_client_gray"
+					android:textSize="12sp"/>
+
+				<View style="@style/person_split_left_right"/>
+
+				<TextView
+					android:id="@+id/person_order_info_store"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="1px"
+					android:background="@color/white"
+					android:drawableRight="@drawable/person_jump_icon"
+					android:gravity="center"
+					android:paddingBottom="10dp"
+					android:paddingLeft="100dp"
+					android:paddingRight="100dp"
+					android:paddingTop="10dp"
+					android:textColor="@color/wjika_client_gray"
+					android:textSize="12sp"/>
+			</LinearLayout>
+
+			<View style="@style/person_split_match"/>
+
+			<View
+				style="@style/person_split_margin_top"
+				android:visibility="gone"/>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="44dp"
+				android:background="@color/white"
+				android:paddingLeft="12dp"
+				android:paddingRight="12dp"
+				android:visibility="gone">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="卡种类"
+					android:textColor="@color/wjika_client_middle_gray"
+					android:textSize="13sp"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:text="电子卡"
+					android:textColor="@color/wjika_client_middle_gray"
+					android:textSize="13sp"/>
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="44dp"
+				android:background="@color/white"
+				android:paddingLeft="12dp"
+				android:paddingRight="12dp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="@string/person_recharge_pay_way"
+					android:textColor="@color/wjika_client_middle_gray"
+					android:textSize="13sp"/>
+
+				<TextView
+					android:id="@+id/person_orderdetail_payway"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:textColor="@color/wjika_client_middle_gray"
+					android:textSize="13sp"/>
+			</RelativeLayout>
+
+			<View style="@style/person_split_margin_top"/>
+
+			<include layout="@layout/person_order_detail"/>
+
+			<View style="@style/person_split_match"/>
+
+			<TextView
+				android:id="@+id/same_footer_view"
+				android:layout_width="match_parent"
+				android:layout_height="55dp"
+				android:gravity="center"
+				android:text="@string/person_orderdetail_baozirmb"
+				android:textColor="@color/wjika_client_introduce_words"
+				android:textSize="15sp"
+				android:visibility="gone"/>
+		</LinearLayout>
+	</ScrollView>
+
+	<View
+		style="@style/person_split_match"
+		android:layout_above="@+id/person_order_info_foot"/>
+
+	<LinearLayout
+		android:id="@+id/person_order_info_foot"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:layout_alignParentBottom="true"
+		android:background="@color/white"
+		android:orientation="horizontal"
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp"
+		android:visibility="gone">
+
+		<TextView
+			android:id="@+id/person_order_info_total_amount"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginBottom="15dp"
+			android:layout_marginTop="15dp"
+			android:layout_weight="1"
+			android:textColor="@color/wjika_client_price_red"/>
+
+		<TextView
+			android:id="@+id/person_order_info_cancel"
+			android:layout_width="100dp"
+			android:layout_height="35dp"
+			android:layout_gravity="center"
+			android:background="@drawable/ic_button_cancel"
+			android:gravity="center"
+			android:text="@string/order_cancel"
+			android:textColor="@color/wjika_client_hint_words"
+			android:textSize="14sp"/>
+
+		<TextView
+			android:id="@+id/person_order_info_pay"
+			android:layout_width="100dp"
+			android:layout_height="35dp"
+			android:layout_gravity="center"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/ic_button_normal"
+			android:gravity="center"
+			android:text="@string/pay_click_label"
+			android:textColor="@color/white"
+			android:textSize="14sp"/>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/wjika_client_common_bg"
+              android:orientation="vertical">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="45dp"
+				android:layout_gravity="center"
+				android:background="@color/white"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/login_phone"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/wjika_client_comment_marginleft"
+					android:layout_marginRight="10dp"
+					android:text="@string/login_input_phone"
+					android:textColor="@color/wjika_client_dark_grey"
+					android:textSize="@dimen/font_size_c"/>
+
+				<com.wjika.client.widget.ClearEditText
+					android:id="@+id/input_phone"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="@color/transparent"
+					android:drawableRight="@drawable/search_result_img"
+					android:hint="@string/login_input_phone_hint"
+					android:inputType="number"
+					android:maxLength="11"
+					android:paddingRight="@dimen/wjika_client_comment_marginright"
+					android:singleLine="true"
+					android:textColor="@color/wjika_client_dark_grey"
+					android:textColorHint="@color/wjika_client_hint_words"
+					android:textSize="@dimen/font_size_c"/>
+			</LinearLayout>
+
+			<View style="@style/person_split_left_right"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="45dp"
+				android:layout_gravity="center"
+				android:background="@color/white"
+				android:gravity="center"
+				android:orientation="horizontal"
+				android:paddingTop="2dp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/wjika_client_comment_marginleft"
+					android:layout_marginRight="10dp"
+					android:text="@string/login_input_signcode"
+					android:textColor="@color/wjika_client_dark_grey"
+					android:textSize="@dimen/font_size_c"/>
+
+				<com.wjika.client.widget.ClearEditText
+					android:id="@+id/input_signcode"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.0"
+					android:background="@color/transparent"
+					android:drawableRight="@drawable/search_result_img"
+					android:hint="@string/login_input_signcode_hint"
+					android:inputType="number"
+					android:maxLength="6"
+					android:paddingRight="@dimen/wjika_client_comment_marginright"
+					android:singleLine="true"
+					android:textColor="@color/wjika_client_dark_grey"
+					android:textColorHint="@color/wjika_client_hint_words"
+					android:textSize="@dimen/font_size_c"/>
+
+				<TextView
+					android:id="@+id/btn_get_signcode"
+					android:layout_width="103dp"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="@dimen/wjika_client_comment_marginright"
+					android:background="@drawable/ic_tran_bg_selector"
+					android:enabled="false"
+					android:gravity="center"
+					android:text="@string/login_get_signcode"
+					android:textColor="@color/get_signcode_txt_color"/>
+			</LinearLayout>
+
+			<View style="@style/person_split_match"/>
+
+			<TextView
+				android:id="@+id/btn_login"
+				android:layout_width="match_parent"
+				android:layout_height="48dp"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginLeft="15dp"
+				android:layout_marginRight="15dp"
+				android:layout_marginTop="30dp"
+				android:background="@drawable/ic_button"
+				android:enabled="false"
+				android:gravity="center"
+				android:text="@string/login"
+				android:textColor="@color/white"/>
+
+			<TextView
+				android:id="@+id/btn_login_change_phone"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="end"
+				android:layout_marginRight="@dimen/wjika_client_comment_marginright"
+				android:layout_marginTop="10dp"
+				android:text="@string/login_change_phone"
+				android:textColor="@color/wjika_client_btn_gray"/>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

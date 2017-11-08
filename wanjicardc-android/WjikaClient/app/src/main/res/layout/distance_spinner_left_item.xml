@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+     <!--android:textColor="@color/list_text_select_color" -->
+    <View
+        android:id="@+id/left_view"
+        android:visibility="invisible"
+        android:background="@color/wjika_client_title_bg"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:textColor="#2e323b"
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="全部"
+        android:textSize="@dimen/font_size_j" />
+    <View
+        android:id="@+id/right_view"
+        android:background="#e6e7e8"
+        android:layout_width="2px"
+        android:layout_height="match_parent"/>
+</LinearLayout>

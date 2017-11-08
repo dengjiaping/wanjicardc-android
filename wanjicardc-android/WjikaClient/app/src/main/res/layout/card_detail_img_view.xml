@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:gravity="center"
+              android:background="@color/wjika_client_common_bg"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<android.support.v7.widget.CardView
+			android:id="@+id/card_bg"
+			fresco:cardBackgroundColor="@color/wjika_client_card_blue"
+			fresco:cardCornerRadius="4dp"
+			android:layout_centerInParent="true"
+			android:layout_width="295dp"
+			android:layout_height="165dp">
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				<com.facebook.drawee.view.SimpleDraweeView
+					android:background="@drawable/home_brand_item_logo"
+					android:textColor="#32ffffff"
+					android:id="@+id/card_store"
+					android:layout_marginLeft="20dp"
+					android:paddingTop="10dp"
+					android:paddingBottom="10dp"
+					android:paddingLeft="1dp"
+					android:paddingRight="1dp"
+					android:layout_centerVertical="true"
+					android:layout_width="49dp"
+					android:layout_height="49dp"/>
+				<View
+					android:id="@+id/card_line"
+					android:layout_marginLeft="15dp"
+					android:layout_toRightOf="@+id/card_store"
+					android:layout_centerVertical="true"
+					android:layout_width="0.5dp"
+					android:layout_height="49dp"
+					android:background="#65ffffff"/>
+
+				<LinearLayout
+					android:layout_centerVertical="true"
+					android:orientation="vertical"
+					android:layout_marginLeft="15dp"
+					android:layout_toRightOf="@+id/card_line"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+					<TextView
+						android:id="@+id/card_name"
+						android:textSize="14sp"
+						android:textColor="@color/white"
+						android:singleLine="true"
+						android:ellipsize="end"
+						android:text="盛世逸彩美容美发有限公司"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+					<LinearLayout
+						android:layout_marginTop="15dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="面值"
+							android:textColor="@color/white"
+							android:textSize="13sp"/>
+						<TextView
+							android:id="@+id/card_face_value"
+							android:layout_marginLeft="10dp"
+							android:textColor="@color/white"
+							android:textSize="17sp"
+							android:text="500元"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"/>
+					</LinearLayout>
+
+				</LinearLayout>
+			</RelativeLayout>
+
+
+		</android.support.v7.widget.CardView>
+
+
+	</RelativeLayout>
+</LinearLayout>

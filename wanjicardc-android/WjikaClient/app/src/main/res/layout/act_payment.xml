@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:background="@color/white"
+		android:layout_marginTop="10dp"
+		android:showDividers="beginning|end"
+		android:divider="@drawable/ecard_divider_bg">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="25dp"
+			android:paddingBottom="20dp"
+			android:paddingLeft="12dp"
+			android:paddingRight="12dp"
+			android:textSize="15sp"
+			android:textColor="@color/wjika_client_middle_gray"
+			android:text="收款金额"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="12dp"
+			android:paddingRight="12dp"
+			android:focusable="true"
+			android:focusableInTouchMode="true">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:textSize="35sp"
+				android:textColor="@color/wjika_client_middle_gray"
+				android:text="￥"/>
+
+			<EditText
+				android:id="@+id/payment_amount"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@null"
+				android:paddingLeft="20dp"
+				android:inputType="numberDecimal"
+				android:maxLength="9"
+				android:textSize="50sp"
+				android:textColor="@color/wjika_client_middle_gray"
+				android:textColorHint="@color/edittext_hint_color"
+				android:hint="0.00"/>
+		</LinearLayout>
+
+		<View style="@style/person_split_left_right"
+			android:layout_marginTop="20dp"/>
+
+		<TextView
+			android:id="@+id/payment_hint"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="12dp"
+			android:paddingRight="12dp"
+			android:paddingTop="15dp"
+			android:paddingBottom="15dp"
+			android:textSize="12sp"
+			android:textColor="@color/wjika_client_gray"/>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/payment_confirm"
+		android:layout_width="match_parent"
+		android:layout_height="44dp"
+		android:layout_marginTop="40dp"
+		android:layout_marginLeft="12dp"
+		android:layout_marginRight="12dp"
+		android:background="@drawable/ic_button"
+		android:gravity="center"
+		android:enabled="false"
+		android:textSize="16sp"
+		android:textColor="@color/white"
+		android:text="确认收款"/>
+
+	<TextView
+		android:id="@+id/payment_declaration"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="15dp"
+		android:gravity="center"
+		android:textSize="12sp"
+		android:textColor="@color/wjika_client_gray"/>
+</LinearLayout>

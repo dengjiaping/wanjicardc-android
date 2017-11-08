@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wjika_client_common_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="98dp"
+            android:layout_height="98dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="37dp"
+            android:src="@drawable/about_us_icon"/>
+
+        <TextView
+            android:id="@+id/person_about_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/wjika_client_introduce_words"
+            android:textSize="14sp"/>
+
+        <View
+            style="@style/person_split_match"
+            android:layout_marginTop="40dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/person_about_update"
+                style="@style/PersonItemCommon"
+                android:text="@string/check_update"/>
+
+            <View
+                style="@style/person_split_left_right"/>
+
+            <TextView
+                android:id="@+id/person_about_service_tel"
+                style="@style/PersonItemCommon"
+                android:text="@string/person_about_us_contact"/>
+
+            <View
+                style="@style/person_split_left_right"/>
+
+            <TextView
+                android:id="@+id/person_about_license"
+                style="@style/PersonItemCommon"
+                android:text="@string/person_about_us_agreement"/>
+
+            <View
+                style="@style/person_split_left_right"/>
+
+            <TextView
+                android:id="@+id/person_about_help"
+                style="@style/PersonItemCommon"
+                android:text="@string/person_setting_help"/>
+        </LinearLayout>
+
+        <View
+            style="@style/person_split_match"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/person_about_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:lineSpacingExtra="10dp"
+        android:text="@string/person_about_us_copyright"
+        android:textColor="@color/wjika_client_gray"
+        android:textSize="12sp"/>
+</LinearLayout>

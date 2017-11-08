@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="270dp"
+              android:layout_height="wrap_content"
+              android:background="@drawable/round_rect_grey"
+              android:divider="@drawable/ecard_divider_bg"
+              android:orientation="vertical"
+              android:showDividers="middle">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp">
+
+		<ImageView
+			android:id="@+id/ecard_dialog_close"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_centerVertical="true"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:src="@drawable/ecard_dialog_close_bg"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="请输入支付密码"
+			android:textColor="@color/black"
+			android:textSize="17sp"/>
+
+		<ImageView
+			android:id="@+id/ecard_dialog_help"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:src="@drawable/ecard_dialog_help_bg"/>
+	</RelativeLayout>
+
+	<LinearLayout
+		android:id="@+id/ecard_dialog_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="16dp"
+		android:paddingRight="16dp"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/ecard_dialog_message"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:gravity="center"
+			android:textColor="@color/black"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:id="@+id/ecard_dialog_amount"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="18dp"
+			android:drawableLeft="@drawable/ecard_wallet_ic"
+			android:drawablePadding="9dp"
+			android:textColor="@color/person_main_baozi_num"
+			android:textSize="32sp"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingLeft="16dp"
+		android:paddingRight="16dp">
+
+		<TextView
+			android:id="@+id/ecard_dialog_balance"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="12dp"
+			android:textColor="@color/black"
+			android:textSize="14sp"/>
+
+		<com.wjika.client.widget.PasswordInputView
+			android:id="@+id/ecard_dialog_pwd"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_marginTop="12dp"
+			android:cursorVisible="false"
+			android:focusable="true"
+			android:inputType="numberPassword"
+			android:maxLength="6"
+			android:padding="0dp"
+			app:borderColor="@color/border_gray"
+			app:borderWidth="1px"
+			app:borderRadius="0dp"
+			app:passwordColor="@color/wjika_client_title_bg"
+			app:passwordLength="6"
+			app:passwordWidth="8dp"/>
+
+		<TextView
+			android:id="@+id/ecard_dialog_forget"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="16dp"
+			android:paddingBottom="16dp"
+			android:gravity="center"
+			android:text="忘记密码？"
+			android:textColor="@color/ecard_text_color"
+			android:textSize="12sp"/>
+	</LinearLayout>
+</LinearLayout>

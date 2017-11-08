@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/main_action_layout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="10dp"
+		android:background="@color/wjika_client_common_bg"/>
+
+	<View style="@style/person_split_match"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="90dp"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<com.facebook.drawee.view.SimpleDraweeView
+			android:id="@+id/main_action_1"
+			android:layout_width="wrap_content"
+			android:layout_height="90dp"
+			android:layout_weight="1.0"
+			fresco:failureImage="@drawable/home_zhuanti_default"
+			fresco:placeholderImage="@drawable/home_zhuanti_default"/>
+
+		<View
+			android:id="@+id/action_divider"
+			android:layout_width="1px"
+			android:layout_height="66dp"
+			android:background="@color/wjika_client_common_bg"/>
+
+		<com.facebook.drawee.view.SimpleDraweeView
+			android:id="@+id/main_action_2"
+			android:layout_width="wrap_content"
+			android:layout_height="90dp"
+			android:layout_weight="1.0"
+			fresco:failureImage="@drawable/home_zhuanti_default"
+			fresco:placeholderImage="@drawable/home_zhuanti_default"/>
+	</LinearLayout>
+
+	<View style="@style/person_split_match"/>
+</LinearLayout>

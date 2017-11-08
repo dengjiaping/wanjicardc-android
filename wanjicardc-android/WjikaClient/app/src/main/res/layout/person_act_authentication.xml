@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/person_main_auth"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/wjika_client_transparent_blue"
+        android:drawableLeft="@drawable/location_prompt"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="@string/person_auth_nochange"
+        android:textColor="@color/wjika_client_primary_visual_blue"
+        android:textSize="12sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/wjika_client_common_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/authentication_image"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/person_auth_commit" />
+
+            <TextView
+                android:id="@+id/authentication_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/person_auth_info"
+                android:textColor="@color/wjika_client_introduce_words"
+                android:textSize="12sp" />
+
+            <View style="@style/person_split_match" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/person_auth_real_name"
+                        android:textColor="@color/wjika_client_dark_grey"
+                        android:textSize="15sp" />
+
+                    <com.wjika.client.widget.ClearEditText
+                        android:id="@+id/person_authentication_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="@null"
+                        android:drawableRight="@drawable/search_result_img"
+                        android:hint="@string/person_auth_real_name_hint"
+                        android:maxLength="@integer/person_input_max_length"
+                        android:singleLine="true"
+                        android:textColor="@color/wjika_client_dark_grey"
+                        android:textColorHint="@color/wjika_client_hint_words"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View style="@style/person_split_left_right" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/person_auth_id_no"
+                        android:textColor="@color/wjika_client_dark_grey"
+                        android:textSize="15sp" />
+
+                    <com.wjika.client.widget.ClearEditText
+                        android:id="@+id/person_authentication_identity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="@null"
+                        android:digits="0123456789Xx"
+                        android:drawableRight="@drawable/search_result_img"
+                        android:hint="@string/person_auth_id_no_hint"
+                        android:maxLength="@integer/person_input_max_length"
+                        android:singleLine="true"
+                        android:textColor="@color/wjika_client_dark_grey"
+                        android:textColorHint="@color/wjika_client_hint_words"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/person_split_match" />
+
+            <View style="@style/person_split_margin_top" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/authentication_choose_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/person_auth_choose_bank"
+                        android:textColor="@color/wjika_client_dark_grey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/authentication_bank_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/ic_right_arrow"
+                        android:text="@string/person_auth_choose_bank_info"
+                        android:textColor="@color/wjika_client_hint_words"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View style="@style/person_split_left_right" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:paddingLeft="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/person_auth_bank_number"
+                        android:textColor="@color/wjika_client_dark_grey"
+                        android:textSize="15sp" />
+
+                    <com.wjika.client.widget.ClearEditText
+                        android:id="@+id/person_authentication_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableRight="@drawable/search_result_img"
+                        android:hint="@string/person_auth_input_bank_number"
+                        android:inputType="number"
+                        android:maxLength="24"
+                        android:singleLine="true"
+                        android:textColor="@color/wjika_client_dark_grey"
+                        android:textColorHint="@color/wjika_client_hint_words"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/person_auth_bank_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:src="@drawable/authtication_support_bank" />
+                </LinearLayout>
+
+                <View style="@style/person_split_left_right" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/person_auth_bank_phone"
+                        android:textColor="@color/wjika_client_dark_grey"
+                        android:textSize="15sp" />
+
+                    <com.wjika.client.widget.ClearEditText
+                        android:id="@+id/person_authentication_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:drawableRight="@drawable/search_result_img"
+                        android:hint="@string/person_auth_input_bank_phone"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:singleLine="true"
+                        android:textColor="@color/wjika_client_dark_grey"
+                        android:textColorHint="@color/wjika_client_hint_words"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/person_split_match" />
+
+            <TextView
+                android:id="@+id/person_authentication_submit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ic_button"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/person_auth_submit"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/person_auth_prompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:gravity="left"
+                android:lineSpacingExtra="8dp"
+                android:paddingBottom="10dp"
+                android:text="@string/person_auth_desc"
+                android:textColor="@color/wjika_client_hint_words"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

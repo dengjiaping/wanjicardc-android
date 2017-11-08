@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88000000"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:background="@color/wjika_client_common_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/wjika_client_common_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_location_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/wjika_client_common_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/store_location"
+                    android:layout_marginLeft="12dp"/>
+                <TextView
+                    android:id="@+id/tv_location_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:textColor="#717474"
+                    android:layout_marginLeft="12dp"
+                    android:text="定位失败，请点击重试"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_Line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/wjika_client_spilt_line"/>
+
+            <TextView
+                android:id="@+id/tv_location_city_key"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:text="@string/city_current_label"
+                android:textColor="@color/wjika_client_introduce_words" />
+
+            <LinearLayout
+                android:id="@+id/ll_location_city_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txt_current_city"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/store_city_normal"
+                    android:gravity="center"
+                    android:text="北京"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:text="@string/city_available_label"
+                android:textColor="@color/wjika_client_introduce_words"
+                android:textSize="14sp" />
+
+            <com.common.view.GridViewForInner
+                android:id="@+id/grid_city"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:horizontalSpacing="5dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="4"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:verticalSpacing="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/vBlank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+</LinearLayout>

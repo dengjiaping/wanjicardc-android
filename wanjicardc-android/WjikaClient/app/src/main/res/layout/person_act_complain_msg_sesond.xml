@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  xmlns:fresco="http://schemas.android.com/apk/res-auto"
+			  android:orientation="vertical"
+			  android:background="@color/wjika_client_common_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+	    android:scrollbars="none">
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+
+	        <ImageView
+	            android:layout_width="match_parent"
+	            android:layout_height="239dp"
+				android:layout_marginLeft="12dp"
+				android:layout_marginRight="12dp"
+				android:layout_marginTop="15dp"
+	            android:layout_gravity="center_horizontal"
+	            android:background="@drawable/security_settings_appeal_detail"/>
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_marginLeft="12dp"
+			android:layout_marginRight="12dp"
+			android:layout_marginTop="15dp"
+	        android:text="@string/complain_message_submit_prompt"
+	        android:textSize="15sp"
+			android:textColor="@color/wjika_client_dark_grey"/>
+
+	    <RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="151dp"
+			android:layout_marginLeft="12dp"
+			android:layout_marginRight="12dp"
+			android:layout_marginTop="15dp"
+	        android:orientation="vertical"
+	        android:background="@color/white">
+
+	       <!-- <ImageView
+	            android:id="@+id/person_complain_msg_photo"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+	            android:adjustViewBounds="true"
+	            android:scaleType="centerCrop"/>-->
+			<com.facebook.drawee.view.SimpleDraweeView
+				android:id="@+id/person_complain_msg_photo"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_gravity="center"
+				android:scaleType="centerCrop"
+				fresco:actualImageScaleType="focusCrop"/>
+	        <ImageView
+	            android:id="@+id/person_complain_msg_second_add"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+				android:layout_marginTop="34dp"
+				android:layout_centerHorizontal="true"
+	            android:background="@drawable/security_settings_appeal_add_to"/>
+
+	        <TextView
+	            android:id="@+id/person_complain_msg_add_detail"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+	            android:layout_below="@+id/person_complain_msg_second_add"
+	            android:layout_centerInParent="true"
+	            android:layout_marginTop="25dp"
+	            android:text="@string/complain_message_ensure_photo"/>
+	    </RelativeLayout>
+
+	    <Button
+	        android:id="@+id/person_complain_msg_completed"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:layout_marginLeft="12dp"
+			android:layout_marginRight="12dp"
+			android:layout_marginBottom="15dp"
+			android:layout_marginTop="30dp"
+	        android:background="@drawable/ic_button_normal"
+	        android:text="@string/person_submit"
+	        android:textColor="@color/white"/>
+	    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

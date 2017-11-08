@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--用户昵称，真实姓名，身份证号最大长度-->
+	<integer name="person_input_max_length">18</integer>
+	<!--短信验证码最大长度-->
+	<integer name="person_verification_max_length">6</integer>
+</resources>
